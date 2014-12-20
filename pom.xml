@@ -13,6 +13,10 @@
         <github.global.server>github</github.global.server>
     </properties>
 
+
+    <!--<url>https://todvora.github.io/czechpoints</url>-->
+    <url>https://github.com/todvora/czechpoints</url>
+
     <scm>
         <connection>https://github.com/todvora/czechpoints</connection>
     </scm>
@@ -121,6 +125,7 @@
                 <version>0.10</version>
                 <configuration>
                     <message>Creating site for ${project.version}</message>
+                    <server>github</server>
                 </configuration>
                 <executions>
                     <execution>
