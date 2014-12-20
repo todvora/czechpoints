@@ -140,7 +140,7 @@ var constructPopupContent = function (item) {
 
 $.get("czechpoints.json", function (data) {
     var knownTypes = {};
-    var cluster = new L.MarkerClusterGroup();
+    var cluster = new L.MarkerClusterGroup({maxClusterRadius:50});
     var allMarkers = [];
     data.forEach(function (item) {
         knownTypes[item.type] = true;
