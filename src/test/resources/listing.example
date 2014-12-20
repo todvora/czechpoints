@@ -1,0 +1,1648 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+
+<html>
+  <head>
+    <title>Seznam Czech POINTů na úřadech | Czech POINT</title>
+     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <style type="text/css" media="all">@import "/web/modules/node/node.css";</style>
+<style type="text/css" media="all">@import "/web/modules/system/defaults.css";</style>
+<style type="text/css" media="all">@import "/web/modules/system/system.css";</style>
+<style type="text/css" media="all">@import "/web/modules/user/user.css";</style>
+<style type="text/css" media="all">@import "/web/modules/poll/poll.css";</style>
+<style type="text/css" media="all">@import "/web/sites/all/modules/cck/content.css";</style>
+<style type="text/css" media="all">@import "/web/sites/all/modules/panels/css/panels.css";</style>
+<style type="text/css" media="all">@import "/web/themes/czechpoint/style.css";</style>
+    <script type="text/javascript" src="/web/misc/jquery.js"></script>
+<script type="text/javascript" src="/web/misc/drupal.js"></script>
+<script type="text/javascript" src="/web/sites/all/modules/panels/js/panels.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="/web/themes/czechpoint/inc/pages.css">
+    <link rel="stylesheet" type="text/css" href="/web/themes/czechpoint/inc/divstyles.css">
+    <link rel="stylesheet" type="text/css" href="/web/themes/czechpoint/inc/find.css">
+    <script language="JavaScript" type="text/javascript" src="/web/themes/czechpoint/inc/main.js"></script>
+    <link rel="shortcut icon" href="/web/themes/czechpoint/layout/favicon.ico" >
+  </head>
+<body>
+
+<div 
+id="obsah_stranky"><script language="JavaScript" type="text/javascript"><!--
+domOK = Boolean(document.getElementById);
+// domOK = false;
+
+function getWidth(element) {
+	var x;
+	return ((x=element.style.pixelWidth) || (x=element.clientWidth) || (x=element.offsetWidth) || (x=parseInt(element.style.width))) ? x : null;
+}
+
+function setOffset () {
+	if (domOK) {
+		offsetLeft = 0   ;
+		offsetTop  = 107 ;
+		browName  = navigator.appName              ;
+		browVerze = parseInt(navigator.appVersion) ;
+		if ( browName == "Microsoft Internet Explorer" ) {
+			sirka     = 806 ;
+			offsetTop = 107 ;
+		} else {
+			sirka     = 786 ;
+			offsetTop = 106 ;
+		} ;
+		var w      = (getWidth(document.documentElement)) ;
+		offsetLeft = Math.round( ( w - sirka ) / 2 )      ;
+		if (offsetLeft<0) {
+			offsetLeft = 0 ;
+		} ;
+	}
+}
+function resize() {
+	if (domOK) {
+		setOffset();
+		document.getElementById("menu1").style.left = (offsetLeft + 0) + "px";
+		document.getElementById("menu2").style.left = (offsetLeft + 140) + "px";
+		document.getElementById("menu3").style.left = (offsetLeft + 269) + "px";
+		document.getElementById("menu4").style.left = (offsetLeft + 399) + "px";
+		document.getElementById("menu5").style.left = (offsetLeft + 528) + "px";
+		document.getElementById("menu6").style.left = (offsetLeft + 657) + "px";
+		document.getElementById("menu1").style.top = "" + offsetTop + "px";
+		document.getElementById("menu2").style.top = "" + offsetTop + "px";
+		document.getElementById("menu3").style.top = "" + offsetTop + "px";
+		document.getElementById("menu4").style.top = "" + offsetTop + "px";
+		document.getElementById("menu5").style.top = "" + offsetTop + "px";
+		document.getElementById("menu6").style.top = "" + offsetTop + "px";
+	}
+}
+if (domOK) {
+	window.onresize = resize;
+	window.onload = resize;
+	setOffset();
+	document.write('<' + 'style type="text/css">');
+	document.write('#menu1 {left:' + (offsetLeft + 0) + 'px}');
+	document.write('#menu2 {left:' + (offsetLeft + 140) + 'px}');
+	document.write('#menu3 {left:' + (offsetLeft + 269) + 'px}');
+	document.write('#menu4 {left:' + (offsetLeft + 399) + 'px}');
+	document.write('#menu5 {left:' + (offsetLeft + 528) + 'px}');
+	document.write('#menu6 {left:' + (offsetLeft + 657) + 'px}');
+	document.write('</' + 'style>');
+}
+var saktual = "" ;
+function changemenu(id,vzdy) {
+	if ("S" + saktual == "S" + id) {
+		if ( ! vzdy ) {
+			id = "" ;
+		} ;
+	} ;
+	if ( saktual != "" ) {
+		// ShowSelects(true) ;
+		document.getElementById(saktual).style.display="none" ;
+	} ;
+	skryjElement( "home_banner", false ) ;
+	if ( id != "" ) {
+		// ShowSelects(false) ;
+		document.getElementById(id).style.display="" ;
+		if ( ( id == "menu1" ) || ( id == "menu3" ) ) {
+			skryjElement( "home_banner", true ) ;
+		} ;
+	} ;
+	saktual = id ;
+}
+function prejezd(uroven,id,nad) {
+	if (uroven == 2) {
+		if (nad == 1) {
+			document.getElementById(id).src = "/web/themes/czechpoint/layout/menu/active/" + id + ".jpg" ;
+		} else {
+			document.getElementById(id).src = "/web/themes/czechpoint/layout/menu/pasive/" + id + ".jpg" ;
+		} ;
+	} else {
+		if (nad == 1) {
+			// document.getElementById(id).style.background="#000000" ;
+		} else {
+			// document.getElementById(id).style.background="#00A9E2" ;
+		} ;
+	} ;
+}
+--></script>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tr>
+    <td width="50%" onclick="changemenu('')" onmouseover="changemenu('')"></td>
+    <td width="784">
+<table border="0" cellpadding="0" cellspacing="0" width="784">
+  <tr>
+    <td width="784" valign="top">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr>
+        <td width="100%" onclick="changemenu('')" onmouseover="changemenu('')"><p class="radka"><map name="MapMV"><area target="_blank" 
+        alt="Ministerstvo vnitra ČR" title="Ministerstvo vnitra ČR" href="http://www.mvcr.cz/" shape="rect" coords="14, 16, 160, 62"></map><img 
+        border="0" src="/web/themes/czechpoint/layout/top.jpg" usemap="#MapMV" width="784" height="80" alt="Ministerstvo vnitra ČR"></p></td>
+      </tr>
+      <tr>
+        <td width="100%">
+<div class="skryte">
+<h2><a name="menu">Navigace</a></h2>
+</div>
+<div class="radka">
+<table border="0" cellpadding="0" cellspacing="0" width="784">
+  <tr>
+    <td id="topmenu1" onmouseover="prejezd(1,'topmenu1',1);changemenu('menu1',1);" onmouseout="prejezd(1,'topmenu1',0)" class="topnavig"><a class="topnavig" href="/web/?q=node/62" onclick="changemenu('')" title="KDE JE CZECHPOINT"><img border="0" src="/web/themes/czechpoint/layout/menu/menu1.jpg" width="139" height="27" alt="KDE JE CZECHPOINT"></a></td>
+    <td><img border="0" src="/web/themes/czechpoint/layout/2x2.gif" width="1" height="1" alt=""></td>
+    <td id="topmenu2" onmouseover="prejezd(1,'topmenu2',1);changemenu('menu2',1);" onmouseout="prejezd(1,'topmenu2',0)" class="topnavig"><a class="topnavig" href="/web/?q=node/63" onclick="changemenu('')" title="O PROJEKTU"><img border="0" src="/web/themes/czechpoint/layout/menu/menu2.jpg" width="128" height="27" alt="O PROJEKTU"></a></td>
+    <td><img border="0" src="/web/themes/czechpoint/layout/2x2.gif" width="1" height="1" alt=""></td>
+    <td id="topmenu3" onmouseover="prejezd(1,'topmenu3',1);changemenu('menu3',1);" onmouseout="prejezd(1,'topmenu3',0)" class="topnavig"><a class="topnavig" href="/web/?q=node/64" onclick="changemenu('')" title="PRO KONTAKTNÍ MÍSTA"><img border="0" src="/web/themes/czechpoint/layout/menu/menu3.jpg" width="129" height="27" alt="PRO KONTAKTNÍ MÍSTA"></a></td>
+    <td><img border="0" src="/web/themes/czechpoint/layout/2x2.gif" width="1" height="1" alt=""></td>
+    <td id="topmenu4" onmouseover="prejezd(1,'topmenu4',1);changemenu('menu4',1);" onmouseout="prejezd(1,'topmenu4',0)" class="topnavig"><a class="topnavig" href="/web/?q=node/473" onclick="changemenu('')" title="KONVERZE DOKUMENTŮ"><img border="0" src="/web/themes/czechpoint/layout/menu/menu4.jpg" width="129" height="27" alt="KONVERZE DOKUMENTŮ"></a></td>
+    <td><img border="0" src="/web/themes/czechpoint/layout/2x2.gif" width="1" height="1" alt=""></td>
+    <td id="topmenu5" onmouseover="prejezd(1,'topmenu5',1);changemenu('menu5',1);" onmouseout="prejezd(1,'topmenu5',0)" class="topnavig"><a class="topnavig" href="/web/?q=node/124" onclick="changemenu('')" title="KONTAKTY"><img border="0" src="/web/themes/czechpoint/layout/menu/menu5.jpg" width="128" height="27" alt="KONTAKTY"></a></td>
+    <td><img border="0" src="/web/themes/czechpoint/layout/2x2.gif" width="1" height="1" alt=""></td>
+    <td id="topmenu6" onmouseover="prejezd(1,'topmenu6',1);changemenu('menu6',1);" onmouseout="prejezd(1,'topmenu6',0)" class="topnavig"><a class="topnavig" href="/web/?q=node/490" onclick="changemenu('')" title="STATISTIKY"><img border="0" src="/web/themes/czechpoint/layout/menu/menu6.jpg" width="126" height="27" alt="STATISTIKY"></a></td>
+  </tr>
+</table>
+</div>
+<div id="menu1" class="radka" 
+style="display: none; position: absolute; z-index: 1; left: 0; top: 107; width: 139px; height: 340px; background-image: url('/web/themes/czechpoint/layout/menu/menu1_bgr.jpg'); background-repeat: no-repeat; background-position: left top;">
+<p class="subnavig"><img border="0" src="/web/themes/czechpoint/layout/2x2.gif" width="8" height="8" alt=""></p>
+<p class="subnavig"><a class="subnavig" href="/web/?q=node/55&amp;IDKRAJ=6&amp;IDOKRES=NULL&amp;DETAIL=NULL" title="Jihočeský kraj"><img id="menu11" onmouseover="prejezd(2,'menu11',1)" onmouseout="prejezd(2,'menu11',0)" border="0" src="/web/themes/czechpoint/layout/menu/pasive/menu11.jpg" alt="Jihočeský kraj"></a></p>
+<p class="subnavig"><a class="subnavig" href="/web/?q=node/55&amp;IDKRAJ=12&amp;IDOKRES=NULL&amp;DETAIL=NULL" title="Jihomoravský kraj"><img id="menu12" onmouseover="prejezd(2,'menu12',1)" onmouseout="prejezd(2,'menu12',0)" border="0" src="/web/themes/czechpoint/layout/menu/pasive/menu12.jpg" alt="Jihomoravský kraj"></a></p>
+<p class="subnavig"><a class="subnavig" href="/web/?q=node/55&amp;IDKRAJ=8&amp;IDOKRES=NULL&amp;DETAIL=NULL" title="Karlovarský kraj"><img id="menu13" onmouseover="prejezd(2,'menu13',1)" onmouseout="prejezd(2,'menu13',0)" border="0" src="/web/themes/czechpoint/layout/menu/pasive/menu13.jpg" alt="Karlovarský kraj"></a></p>
+<p class="subnavig"><a class="subnavig" href="/web/?q=node/55&amp;IDKRAJ=13&amp;IDOKRES=NULL&amp;DETAIL=NULL" title="Královéhradecký kraj"><img id="menu14" onmouseover="prejezd(2,'menu14',1)" onmouseout="prejezd(2,'menu14',0)" border="0" src="/web/themes/czechpoint/layout/menu/pasive/menu14.jpg" alt="Královéhradecký kraj"></a></p>
+<p class="subnavig"><a class="subnavig" href="/web/?q=node/55&amp;IDKRAJ=7&amp;IDOKRES=NULL&amp;DETAIL=NULL" title="Liberecký kraj"><img id="menu15" onmouseover="prejezd(2,'menu15',1)" onmouseout="prejezd(2,'menu15',0)" border="0" src="/web/themes/czechpoint/layout/menu/pasive/menu15.jpg" alt="Liberecký kraj"></a></p>
+<p class="subnavig"><a class="subnavig" href="/web/?q=node/55&amp;IDKRAJ=15&amp;IDOKRES=NULL&amp;DETAIL=NULL" title="Moravskoslezský kraj"><img id="menu16" onmouseover="prejezd(2,'menu16',1)" onmouseout="prejezd(2,'menu16',0)" border="0" src="/web/themes/czechpoint/layout/menu/pasive/menu16.jpg" alt="Moravskoslezský kraj"></a></p>
+<p class="subnavig"><a class="subnavig" href="/web/?q=node/55&amp;IDKRAJ=3&amp;IDOKRES=NULL&amp;DETAIL=NULL" title="Olomoucký kraj"><img id="menu17" onmouseover="prejezd(2,'menu17',1)" onmouseout="prejezd(2,'menu17',0)" border="0" src="/web/themes/czechpoint/layout/menu/pasive/menu17.jpg" alt="Olomoucký kraj"></a></p>
+<p class="subnavig"><a class="subnavig" href="/web/?q=node/55&amp;IDKRAJ=2&amp;IDOKRES=NULL&amp;DETAIL=NULL" title="Pardubický kraj"><img id="menu18" onmouseover="prejezd(2,'menu18',1)" onmouseout="prejezd(2,'menu18',0)" border="0" src="/web/themes/czechpoint/layout/menu/pasive/menu18.jpg" alt="Pardubický kraj"></a></p>
+<p class="subnavig"><a class="subnavig" href="/web/?q=node/55&amp;IDKRAJ=5&amp;IDOKRES=NULL&amp;DETAIL=NULL" title="Plzeňský kraj"><img id="menu19" onmouseover="prejezd(2,'menu19',1)" onmouseout="prejezd(2,'menu19',0)" border="0" src="/web/themes/czechpoint/layout/menu/pasive/menu19.jpg" alt="Plzeňský kraj"></a></p>
+<p class="subnavig"><a class="subnavig" href="/web/?q=node/55&amp;IDKRAJ=1&amp;IDOKRES=NULL&amp;DETAIL=STREDO" title="Středočeský kraj"><img id="menu1A" onmouseover="prejezd(2,'menu1A',1)" onmouseout="prejezd(2,'menu1A',0)" border="0" src="/web/themes/czechpoint/layout/menu/pasive/menu1A.jpg" alt="Středočeský kraj"></a></p>
+<p class="subnavig"><a class="subnavig" href="/web/?q=node/55&amp;IDKRAJ=10&amp;IDOKRES=NULL&amp;DETAIL=NULL" title="Ústecký kraj"><img id="menu1B" onmouseover="prejezd(2,'menu1B',1)" onmouseout="prejezd(2,'menu1B',0)" border="0" src="/web/themes/czechpoint/layout/menu/pasive/menu1B.jpg" alt="Ústecký kraj"></a></p>
+<p class="subnavig"><a class="subnavig" href="/web/?q=node/55&amp;IDKRAJ=4&amp;IDOKRES=NULL&amp;DETAIL=NULL" title="Vysočina"><img id="menu1C" onmouseover="prejezd(2,'menu1C',1)" onmouseout="prejezd(2,'menu1C',0)" border="0" src="/web/themes/czechpoint/layout/menu/pasive/menu1C.jpg" alt="Vysočina"></a></p>
+<p class="subnavig"><a class="subnavig" href="/web/?q=node/55&amp;IDKRAJ=14&amp;IDOKRES=NULL&amp;DETAIL=NULL" title="Zlínský kraj"><img id="menu1D" onmouseover="prejezd(2,'menu1D',1)" onmouseout="prejezd(2,'menu1D',0)" border="0" src="/web/themes/czechpoint/layout/menu/pasive/menu1D.jpg" alt="Zlínský kraj"></a></p>
+<p class="subnavig"><a class="subnavig" href="/web/?q=node/55&amp;IDKRAJ=1&amp;IDOKRES=NULL&amp;DETAIL=PRAHA" title="Praha"><img id="menu1E" onmouseover="prejezd(2,'menu1E',1)" onmouseout="prejezd(2,'menu1E',0)" border="0" src="/web/themes/czechpoint/layout/menu/pasive/menu1E.jpg" alt="Praha"></a></p>
+<p class="subnavig"><a class="subnavig" href="/web/?q=node/61" title="Zahraničí"><img id="menu1F" onmouseover="prejezd(2,'menu1F',1)" onmouseout="prejezd(2,'menu1F',0)" border="0" src="/web/themes/czechpoint/layout/menu/pasive/menu1F.jpg" alt="Zahraničí"></a></p>
+<p class="subnavig"><img border="0" src="/web/themes/czechpoint/layout/2x2.gif" width="8" height="8" alt=""></p>
+</div>
+<div id="menu2" class="radka" 
+style="display: none; position: absolute; z-index: 1; left: 140; top: 107; width: 128px; height: 174px; background-image: url('/web/themes/czechpoint/layout/menu/menu2_bgr4.jpg'); background-repeat: no-repeat; background-position: left top;">
+<p class="subnavig"><img border="0" src="/web/themes/czechpoint/layout/2x2.gif" width="8" height="8" alt=""></p>
+<p class="subnavig"><a class="subnavig" href="/web/?q=node/22" title="CO JE CZECH POINT"><img id="menu21c" onmouseover="prejezd(2,'menu21c',1)" onmouseout="prejezd(2,'menu21c',0)" border="0" src="/web/themes/czechpoint/layout/menu/pasive/menu21c.jpg" alt="CO JE CZECH POINT"></a></p>
+<p class="subnavig"><a class="subnavig" href="/web/?q=node/23" title="CO POSKYTUJE CZECH POINT"><img id="menu22c" onmouseover="prejezd(2,'menu22c',1)" onmouseout="prejezd(2,'menu22c',0)" border="0" src="/web/themes/czechpoint/layout/menu/pasive/menu22c.jpg" alt="CO POSKYTUJE CZECH POINT"></a></p>
+<p class="subnavig"><a class="subnavig" href="/web/?q=node/52" title="FAQ"><img id="menu23c" onmouseover="prejezd(2,'menu23c',1)" onmouseout="prejezd(2,'menu23c',0)" border="0" src="/web/themes/czechpoint/layout/menu/pasive/menu23c.jpg" alt="FAQ"></a></p>
+<p class="subnavig"><a class="subnavig" href="/web/?q=node/506" title="SLOVNÍK POJMŮ"><img id="menu24c" onmouseover="prejezd(2,'menu24c',1)" onmouseout="prejezd(2,'menu24c',0)" border="0" src="/web/themes/czechpoint/layout/menu/pasive/menu24c.jpg" alt="SLOVNÍK POJMŮ"></a></p>
+<p class="subnavig"><a class="subnavig" href="/web/?q=node/628" title="AKUÁLNÍ DOSTUPNOST SLUŽEB"><img id="menu25c" onmouseover="prejezd(2,'menu25c',1)" onmouseout="prejezd(2,'menu25c',0)" border="0" src="/web/themes/czechpoint/layout/menu/pasive/menu25c.jpg" alt="AKUÁLNÍ DOSTUPNOST SLUŽEB"></a></p>
+<!-- <p class="subnavig"><a class="subnavig" href="?q=zpravy" title="ZPRÁVY Z PROVOZU"><img id="menu23" onmouseover="prejezd(2,'menu23',1)" onmouseout="prejezd(2,'menu23',0)" border="0" src="/web/themes/czechpoint/layout/menu/pasive/menu23.jpg" alt="ZPRÁVY Z PROVOZU"></a></p> //-->
+<p class="subnavig"><img border="0" src="/web/themes/czechpoint/layout/2x2.gif" width="8" height="8" alt=""></p>
+</div>
+<div id="menu3" class="radka" 
+style="display: none; position: absolute; z-index: 1; left: 269; top: 107; width: 129px; height: 129px; background-image: url('/web/themes/czechpoint/layout/menu/menu3_bgr2.jpg'); background-repeat: no-repeat; background-position: left top;">
+<p class="subnavig"><img border="0" src="/web/themes/czechpoint/layout/2x2.gif" width="8" height="8" alt=""></p>
+<p class="subnavig"><a class="subnavig" href="/web/?q=node/458" title="ZŘIĎTE SI CZECH POINT"><img id="menu31b" onmouseover="prejezd(2,'menu31b',1)" onmouseout="prejezd(2,'menu31b',0)" border="0" src="/web/themes/czechpoint/layout/menu/pasive/menu31b.jpg" alt="ZŘIĎTE SI CZECH POINT"></a></p>
+<p class="subnavig"><a class="subnavig" href="/web/?q=node/29" title="ŠKOLENÍ PRACOVNÍKŮ"><img id="menu32b" onmouseover="prejezd(2,'menu32b',1)" onmouseout="prejezd(2,'menu32b',0)" border="0" src="/web/themes/czechpoint/layout/menu/pasive/menu32b.jpg" alt="ŠKOLENÍ PRACOVNÍKŮ"></a></p>
+<p class="subnavig"><a class="subnavig" href="/web/?q=node/25" title="DOKUMENTY KE STAŽENÍ"><img id="menu33b" onmouseover="prejezd(2,'menu33b',1)" onmouseout="prejezd(2,'menu33b',0)" border="0" src="/web/themes/czechpoint/layout/menu/pasive/menu33b.jpg" alt="DOKUMENTY KE STAŽENÍ"></a></p>
+<p class="subnavig"><a class="subnavig" href="/web/?q=node/483" title="PRAKTICKÉ INFORMACE"><img id="menu34b" onmouseover="prejezd(2,'menu34b',1)" onmouseout="prejezd(2,'menu34b',0)" border="0" src="/web/themes/czechpoint/layout/menu/pasive/menu34b.jpg" alt="PRAKTICKÉ INFORMACE"></a></p>
+<p class="subnavig"><img border="0" src="/web/themes/czechpoint/layout/2x2.gif" width="8" height="8" alt=""></p>
+</div>
+
+<div id="menu4" class="radka" 
+style="display: none; position: absolute; z-index: 1; left: 399; top: 107; width: 130px; height: 205px; background-image: url('/web/themes/czechpoint/layout/menu/menu4_bgrB.jpg'); background-repeat: no-repeat; background-position: left top;">
+<p class="subnavig"><img border="0" src="/web/themes/czechpoint/layout/2x2.gif" width="8" height="8" alt=""></p>
+<p class="subnavig"><a class="subnavig" href="/web/?q=node/468" title="AUTORIZOVANÉ KONVERZE DOKUMENTŮ"><img id="menu41b" onmouseover="prejezd(2,'menu41b',1)" onmouseout="prejezd(2,'menu41b',0)" border="0" src="/web/themes/czechpoint/layout/menu/pasive/menu41b.jpg" alt="AUTORIZOVANÉ KONVERZE DOKUMENTŮ"></a></p>
+<p class="subnavig"><a class="subnavig" href="/web/?q=node/478" title="AUTORIZOVANÁ KONVERZE NA ŽÁDOST"><img id="menu42b" onmouseover="prejezd(2,'menu42b',1)" onmouseout="prejezd(2,'menu42b',0)" border="0" src="/web/themes/czechpoint/layout/menu/pasive/menu42b.jpg" alt="AUTORIZOVANÁ KONVERZE NA ŽÁDOST"></a></p>
+<p class="subnavig"><a class="subnavig" href="/web/?q=node/469" title="AUTORIZOVANÁ KONVERZE Z MOCI ÚŘEDNÍ - KzMÚ"><img id="menu43c" onmouseover="prejezd(2,'menu43c',1)" onmouseout="prejezd(2,'menu43c',0)" border="0" src="/web/themes/czechpoint/layout/menu/pasive/menu43c.jpg" alt="AUTORIZOVANÁ KONVERZE Z MOCI ÚŘEDNÍ - KzMÚ"></a></p>
+<p class="subnavig"><a class="subnavig" href="/web/?q=node/470" title="OVĚŘOVACÍ DOLOŽKA"><img id="menu44b" onmouseover="prejezd(2,'menu44b',1)" onmouseout="prejezd(2,'menu44b',0)" border="0" src="/web/themes/czechpoint/layout/menu/pasive/menu44b.jpg" alt="OVĚŘOVACÍ DOLOŽKA"></a></p>
+<p class="subnavig"><a class="subnavig" href="/web/?q=node/471" title="ÚLOŽIŠTĚ OVĚŘOVACÍCH DOLOŽEK"><img id="menu45b" onmouseover="prejezd(2,'menu45b',1)" onmouseout="prejezd(2,'menu45b',0)" border="0" src="/web/themes/czechpoint/layout/menu/pasive/menu45b.jpg" alt="ÚLOŽIŠTĚ OVĚŘOVACÍCH DOLOŽEK"></a></p>
+<p class="subnavig"><a class="subnavig" href="/web/?q=node/472" title="ÚSCHOVNA DOKUMENTŮ"><img id="menu46b" onmouseover="prejezd(2,'menu46b',1)" onmouseout="prejezd(2,'menu46b',0)" border="0" src="/web/themes/czechpoint/layout/menu/pasive/menu46b.jpg" alt="ÚSCHOVNA DOKUMENTŮ"></a></p>
+<p class="subnavig"><a class="subnavig" href="/web/?q=node/507" title="ROZSÁHLÁ KONVERZE"><img id="menu47" onmouseover="prejezd(2,'menu47',1)" onmouseout="prejezd(2,'menu47',0)" border="0" src="/web/themes/czechpoint/layout/menu/pasive/menu47.jpg" alt="ROZSÁHLÁ KONVERZE"></a></p>
+<p class="subnavig"><img border="0" src="/web/themes/czechpoint/layout/2x2.gif" width="8" height="8" alt=""></p>                                                                                                        
+</div>
+
+<div id="menu5" class="radka" 
+style="display: none; position: absolute; z-index: 1; left: 528; top: 107; width: 130px; height: 120px; background-image: url('/web/themes/czechpoint/layout/menu/menu5_bgr2.jpg'); background-repeat: no-repeat; background-position: left top;">
+<p class="subnavig"><img border="0" src="/web/themes/czechpoint/layout/2x2.gif" width="8" height="8" alt=""></p>
+<p class="subnavig"><a class="subnavig" href="/web/?q=node/62" title="SEZNAM CZECH POINTŮ"><img id="menu51" onmouseover="prejezd(2,'menu51',1)" onmouseout="prejezd(2,'menu51',0)" border="0" src="/web/themes/czechpoint/layout/menu/pasive/menu51.jpg" alt="SEZNAM CZECH POINTŮ"></a></p>
+<p class="subnavig"><a class="subnavig" href="/web/?q=node/20" title="PRO NOVINÁŘE"><img id="menu52" onmouseover="prejezd(2,'menu52',1)" onmouseout="prejezd(2,'menu52',0)" border="0" src="/web/themes/czechpoint/layout/menu/pasive/menu52.jpg" alt="PRO NOVINÁŘE"></a></p>
+<p class="subnavig"><a class="subnavig" href="/web/?q=node/21" title="PRO KONTAKTNÍ MÍSTA"><img id="menu54" onmouseover="prejezd(2,'menu54',1)" onmouseout="prejezd(2,'menu54',0)" border="0" src="/web/themes/czechpoint/layout/menu/pasive/menu54.jpg" alt="PRO KONTAKTNÍ MÍSTA"></a></p>
+<p class="subnavig"><a class="subnavig" href="/web/?q=node/632" title="CzechPOINT@home"><img id="menu55" onmouseover="prejezd(2,'menu55',1)" onmouseout="prejezd(2,'menu55',0)" border="0" src="/web/themes/czechpoint/layout/menu/pasive/menu55.jpg" alt="CzechPOINT@home"></a></p>
+<p class="subnavig"><a class="subnavig" href="/web/?q=node/19" title="ODKAZY"><img id="menu53" onmouseover="prejezd(2,'menu53',1)" onmouseout="prejezd(2,'menu53',0)" border="0" src="/web/themes/czechpoint/layout/menu/pasive/menu53.jpg" alt="ODKAZY"></a></p>
+<p class="subnavig"><img border="0" src="/web/themes/czechpoint/layout/2x2.gif" width="8" height="8" alt=""></p>
+</div>
+<div id="menu6" class="radka" 
+style="display: none; position: absolute; z-index: 1; left: 657; top: 107; width: 125px; height: 64px; background-image: url('/web/themes/czechpoint/layout/menu/menu6_bgr.jpg'); background-repeat: no-repeat; background-position: left top;">
+<p class="subnavig"><img border="0" src="/web/themes/czechpoint/layout/2x2.gif" width="8" height="8" alt=""></p>
+<p class="subnavig"><a class="subnavig" href="/web/?q=node/488" title="Czech POINT"        ><img id="menu61c" onmouseover="prejezd(2,'menu61c',1)" onmouseout="prejezd(2,'menu61c',0)" border="0" src="/web/themes/czechpoint/layout/menu/pasive/menu61c.jpg" alt="Czech POINT"        ></a></p>
+<p class="subnavig"><a class="subnavig" href="/web/?q=node/489" title="Czech POINT@office" ><img id="menu62c" onmouseover="prejezd(2,'menu62c',1)" onmouseout="prejezd(2,'menu62c',0)" border="0" src="/web/themes/czechpoint/layout/menu/pasive/menu62c.jpg" alt="Czech POINT@office" ></a></p>
+<p class="subnavig"><img border="0" src="/web/themes/czechpoint/layout/2x2.gif" width="8" height="8" alt=""></p>
+</div>
+        </td>
+      </tr>
+      <tr>
+        <td width="784" onclick="changemenu('')" onmouseover="changemenu('')">
+<table border="0" cellpadding="0" cellspacing="0" width="784">
+  <tr>
+    <td valign="top" width="100%" align="left" rowspan="2"><a href="/web/" title="Domovská stránka"><img border="0" src="/web/themes/czechpoint/layout/logo.jpg" width="175" height="105" alt="Domovská stránka"></a></td>
+    <td valign="top" align="right" nowrap><p class='eshop'><a href="?q=node/628">Aktuální dostupnost služeb</a></p></td>
+    <td><img border="0" src="/web/themes/czechpoint/layout/2x2.gif" width="7" height="30" alt=""></td>
+<!--
+//-->
+    <td valign="top" align="right" nowrap><p class='stav'><span class='stav_cislo'><!-- @DATE@ -->9.12.2014<!-- @/DATE@ --></span></p></td>
+    <td><img border="0" src="/web/themes/czechpoint/layout/2x2.gif" width="17" height="30" alt=""></td>
+    <td valign="top" align="right" nowrap></td>
+    <td valign="top" align="right" nowrap>
+      <!-- <p class='eshop'><a target="_blank" href="http://eshop.czechpoint.cz/" title="e-Shop - výpisy poštou">E-SHOP</a></p> //-->
+      <p class='eshop'><a href="eshop/" title="e-Shop - výpisy poštou">E-SHOP</a></p>
+    </td>
+    <td valign="top" align="right" nowrap><a href="https://www.czechpoint.cz/as/login?uri=https%3a%2f%2fwww.czechpoint.cz%2fvibe%2f&status=NCOO " target="_blank"><img border="0" src="/web/themes/czechpoint/layout/infoPORT.png" 
+    alt="infoPORT" width="118" height="34" style="margin-top: 18px; margin-right: 2px;"></a></td>
+<!--
+    <td valign="top" align="right" nowrap><map name="eGonMap"><area href="/web/?q=node/18" 
+    shape="rect" coords="7, 10, 160, 60" title="eGovernment" alt="eGovernment"></map><img border="0" src="/web/themes/czechpoint/layout/egon.gif" 
+    alt="" width="168" height="65" usemap="#eGonMap"></td>
+//-->
+  </tr>
+  <tr>
+    <td valign="middle" align="right" nowrap colspan="7"><div style="margin-top: 0px; margin-bottom: 8px">
+
+
+ <form action="/web/?q=search/node" accept-charset="UTF-8" method="post" id="search-block-form">
+
+ <input type="submit" name="op" id="edit-submit" onmouseover="prejezd_tlacitka('edit-submit',1)" onmouseout="prejezd_tlacitka('edit-submit',0)" value="hledat" class="findknofl"><img border="0" src="/web/themes/czechpoint/layout/2x2.gif" width="8" height="4" alt=""><input type="text" name="search_block_form_keys"  value="" title="Zadejte hledaný termín." class="findpole" style="height: 19">
+
+
+<input type="hidden" name="form_id" id="edit-search-block-form" value="search_block_form">
+
+</form>
+
+
+</div>
+<script language="JavaScript" type="text/javascript"><!--
+domOK = Boolean(document.getElementById);
+// domOK = false;
+function prejezd_tlacitka(id,nad) {
+	if (domOK) {
+		if (nad == 1) {
+			document.getElementById(id).style.background  ="#A8A9AC" ;
+			document.getElementById(id).style.color       ="#FFFFFF" ;
+			document.getElementById(id).style.borderLeft  ="#DBDCDE 2px solid" ;
+			document.getElementById(id).style.borderTop   ="#F8F8F8 2px solid" ;
+			document.getElementById(id).style.borderRight ="#BBBCBF 2px solid" ;
+			document.getElementById(id).style.borderBottom="#CDCED0 2px solid" ;
+		} else {
+			document.getElementById(id).style.background  ="#D1D2D4" ;
+			document.getElementById(id).style.color       ="#000000" ;
+			document.getElementById(id).style.borderLeft  ="#EDEEEF 2px solid" ;
+			document.getElementById(id).style.borderTop   ="#F8F8F8 2px solid" ;
+			document.getElementById(id).style.borderRight ="#DBDCDE 2px solid" ;
+			document.getElementById(id).style.borderBottom="#E5E6E7 2px solid" ;
+		} ;
+	} ;
+}
+prejezd_tlacitka("edit-submit",0) ;
+--></script>
+</td>
+  </tr>
+</table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+  <tr>
+    <td width="784" align="left" valign="top" onclick="changemenu('')" onmouseover="changemenu('')">
+    <table border="0" cellpadding="0" cellspacing="0" width="784">
+      <tr>
+        <td align="left" valign="top" width="564" style="border: 0px solid #FFFFFF;">
+<div class="skryte">
+<ul>
+  <li><a href="#hlavni">Hlavní obsah stránky</a></li>
+  <li><a href="#menu">Navigace</a></li>
+</ul>
+</div>
+<div class="skryte">
+<h2><a name="hlavni">Hlavní obsah stránky</a></h2>
+</div>
+
+
+<h1>Seznam Czech POINTů na úřadech</h1>
+<div id="node-55" class="node">
+
+
+  <div class="content">
+    
+<table border="0" width="563" cellspacing="0" cellpadding="0">
+  <tr>
+    <td valign="top" align="center" bgcolor="#000000" class="tlacitko"><span style="color: #FFFFFF">Úřady</span></td>
+    <td>&nbsp;&nbsp;</td>
+    <td valign="top" align="center" bgcolor="#00A9E2" id="typ2" onmouseover="prejezd(1,'typ2',1)" onmouseout="prejezd(1,'typ2',0)" onclick="location.href='?q=node/57&IDKRAJ=8&IDOKRES=0&DETAIL=NULL'"  class="tlacitko"><a href="?q=node/57&IDKRAJ=8&IDOKRES=0&DETAIL=NULL"  class="tlacitko">Hospodářská komora</a></td>
+    <td>&nbsp;&nbsp;</td>
+    <td valign="top" align="center" bgcolor="#00A9E2" id="typ3" onmouseover="prejezd(1,'typ3',1)" onmouseout="prejezd(1,'typ3',0)" onclick="location.href='?q=node/56&IDKRAJ=8&IDOKRES=0&DETAIL=NULL'"  class="tlacitko"><a href="?q=node/56&IDKRAJ=8&IDOKRES=0&DETAIL=NULL"  class="tlacitko">Česká pošta</a></td>
+    <td>&nbsp;&nbsp;</td>
+    <td valign="top" align="center" bgcolor="#00A9E2" id="typ4" onmouseover="prejezd(1,'typ4',1)" onmouseout="prejezd(1,'typ4',0)" onclick="location.href='?q=node/148&IDKRAJ=8&IDOKRES=0&DETAIL=NULL'" class="tlacitko"><a href="?q=node/148&IDKRAJ=8&IDOKRES=0&DETAIL=NULL" class="tlacitko">Notáři</a></td>
+    <td>&nbsp;&nbsp;</td>
+    <td valign="top" align="center" bgcolor="#00A9E2" id="typ5" onmouseover="prejezd(1,'typ5',1)" onmouseout="prejezd(1,'typ5',0)" onclick="location.href='?q=node/613&IDKRAJ=8&IDOKRES=0&DETAIL=NULL'" class="tlacitko"><a href="?q=node/613&IDKRAJ=8&IDOKRES=0&DETAIL=NULL" class="tlacitko">Banky</a></td>
+  </tr>
+</table>
+<h2>
+Karlovarský kraj</h2>
+
+<table border="0" width="563" cellspacing="0" cellpadding="0" class="prehled">
+  <tr align=left valign=top>
+    <th>Typ úřadu</th>
+    <th>Obec</th>
+    <th>Ulice</th>
+    <th>Město</th>
+    <th>PSČ</th>
+    <th>WWW</th>
+  </tr>
+  <tr 
+  align="left" valign="top">
+    <td>Městský úřad</td>
+    <td>Abertamy</td>
+    <td>Farní 2</td>
+    <td>Abertamy</td>
+    <td nowrap>362 35</td>
+    <td><a href="http://www.abertamy.eu" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  class="zvyraz" 
+  align="left" valign="top">
+    <td>Obecní úřad</td>
+    <td>Andělská Hora</td>
+    <td>Andělská Hora č.p. 18</td>
+    <td>Andělská Hora</td>
+    <td nowrap>364 71</td>
+    <td><a href="http://http:/www.andelskahora.com" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  align="left" valign="top">
+    <td>Městský úřad</td>
+    <td>Aš</td>
+    <td>Kamenná 473/52</td>
+    <td>Aš</td>
+    <td nowrap>352 01</td>
+    <td><a href="http://www.muas.cz" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  class="zvyraz" 
+  align="left" valign="top">
+    <td>Městský úřad</td>
+    <td>Bečov nad Teplou</td>
+    <td>nám. 5. května 1</td>
+    <td>Bečov nad Teplou</td>
+    <td nowrap>364 64</td>
+    <td><a href="http://www.becov.cz/czech-point" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  align="left" valign="top">
+    <td>Městský úřad</td>
+    <td>Bochov</td>
+    <td>nám. Míru 1</td>
+    <td>Bochov</td>
+    <td nowrap>364 71</td>
+    <td><a href="http://www.mesto-bochov.cz/" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  class="zvyraz" 
+  align="left" valign="top">
+    <td>Městský úřad</td>
+    <td>Boží Dar</td>
+    <td>Boží Dar 1</td>
+    <td>Boží Dar</td>
+    <td nowrap>362 62</td>
+    <td><a href="http://www.bozidar.eu" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  align="left" valign="top">
+    <td>Obecní úřad</td>
+    <td>BOŽIČANY</td>
+    <td> 96</td>
+    <td>Božičany</td>
+    <td nowrap>36225</td>
+    <td><a href="http://bozicany.cz" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  class="zvyraz" 
+  align="left" valign="top">
+    <td>Obecní úřad</td>
+    <td>Březová</td>
+    <td>Hamerská 104/38</td>
+    <td>Březová</td>
+    <td nowrap>362 15</td>
+    <td><a href="http://www.mestaobce.cz" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  align="left" valign="top">
+    <td>Městský úřad</td>
+    <td>Březová</td>
+    <td>nám. Míru 230</td>
+    <td>Březová</td>
+    <td nowrap>356 01</td>
+    <td><a href="http://www.mu-brezova.cz" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  class="zvyraz" 
+  align="left" valign="top">
+    <td>Obecní úřad</td>
+    <td>Bublava</td>
+    <td> 389</td>
+    <td>Bublava</td>
+    <td nowrap>35801</td>
+    <td><a href="http://obecbublava.cz" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  align="left" valign="top">
+    <td>Obecní úřad</td>
+    <td>Bukovany</td>
+    <td>č.p. 47</td>
+    <td>Bukovany</td>
+    <td nowrap>357 55</td>
+    <td><a href="http://www.obecbukovany.eu" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  class="zvyraz" 
+  align="left" valign="top">
+    <td>Obecní úřad</td>
+    <td>Černava</td>
+    <td> 80</td>
+    <td>Černava</td>
+    <td nowrap>36221</td>
+    <td><a href="http://www.oucernava.cz/" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  align="left" valign="top">
+    <td>Obecní úřad</td>
+    <td>Čichalov</td>
+    <td> 55</td>
+    <td>Čichalov</td>
+    <td nowrap>36452</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr 
+  class="zvyraz" 
+  align="left" valign="top">
+    <td>Obecní úřad</td>
+    <td>Dalovice</td>
+    <td>Hlavní 99</td>
+    <td>Dalovice</td>
+    <td nowrap>36263</td>
+    <td><a href="http://www.ou-dalovice.cz" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  align="left" valign="top">
+    <td>Obecní úřad</td>
+    <td>Dasnice</td>
+    <td>Dasnice 42</td>
+    <td>Habartov</td>
+    <td nowrap>357 09</td>
+    <td><a href="http://www.dasnice.cz" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  class="zvyraz" 
+  align="left" valign="top">
+    <td>Obecní úřad</td>
+    <td>Děpoltovice</td>
+    <td>Děpoltovice 110</td>
+    <td>Nová Role</td>
+    <td nowrap>362 25</td>
+    <td><a href="http://depoltovice.obec.cz" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  align="left" valign="top">
+    <td>Městys</td>
+    <td>Dolní Nivy</td>
+    <td> 75</td>
+    <td>Dolní Nivy</td>
+    <td nowrap>35601</td>
+    <td><a href="http://www.dolninivy.cz" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  class="zvyraz" 
+  align="left" valign="top">
+    <td>Obecní úřad</td>
+    <td>Dolní Rychnov</td>
+    <td>Revoluční 303</td>
+    <td>Dolní Rychnov</td>
+    <td nowrap>356 04</td>
+    <td><a href="http://www.dolnirychnov.cz/" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  align="left" valign="top">
+    <td>Obecní úřad</td>
+    <td>Dolní Žandov</td>
+    <td>č.p. 36</td>
+    <td>Dolní Žandov</td>
+    <td nowrap>354 93</td>
+    <td><a href="http://www.dolnizandov.cz/" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  class="zvyraz" 
+  align="left" valign="top">
+    <td>Obecní úřad</td>
+    <td>Drmoul</td>
+    <td>Plzeňská 181</td>
+    <td>Drmoul</td>
+    <td nowrap>353 01</td>
+    <td><a href="http://www.obecdrmoul.cz" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  align="left" valign="top">
+    <td>Městský úřad</td>
+    <td>Františkovy Lázně</td>
+    <td>Nádražní 208/5</td>
+    <td>Františkovy Lázně</td>
+    <td nowrap>351 01</td>
+    <td><a href="http://www.frantiskovy-lazne.cz/vismo/dokumenty2.asp?u=3464&id_org=3464&id=170132&p1=21636" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  class="zvyraz" 
+  align="left" valign="top">
+    <td>Městský úřad</td>
+    <td>Habartov</td>
+    <td>Nám. Přátelství 112</td>
+    <td>Habartov</td>
+    <td nowrap>357 09</td>
+    <td><a href="http://www.mestohabartov.cz" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  align="left" valign="top">
+    <td>Obecní úřad</td>
+    <td>Hájek</td>
+    <td>Hájek 68</td>
+    <td>Ostrov nad Ohří</td>
+    <td nowrap>363 01</td>
+    <td><a href="http://www.obechajek.cz" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  class="zvyraz" 
+  align="left" valign="top">
+    <td>Obecní úřad</td>
+    <td>Hazlov</td>
+    <td>č.p. 31</td>
+    <td>Hazlov</td>
+    <td nowrap>351 32</td>
+    <td><a href="http://www.obechazlov.cz/" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  align="left" valign="top">
+    <td>Obecní úřad</td>
+    <td>Horní Blatná</td>
+    <td>náměstí Sv. Vavřince 1</td>
+    <td>Horní Blatná</td>
+    <td nowrap>36235</td>
+    <td><a href="http://www.horni-blatna.cz/" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  class="zvyraz" 
+  align="left" valign="top">
+    <td>Městský úřad</td>
+    <td>Horní Slavkov</td>
+    <td>Dlouhá 634/12</td>
+    <td>Horní Slavkov</td>
+    <td nowrap>357 31</td>
+    <td><a href="http://www.muhslavkov.cz" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  align="left" valign="top">
+    <td>Obecní úřad</td>
+    <td>Hory</td>
+    <td> 47</td>
+    <td>Hory</td>
+    <td nowrap>36001</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr 
+  class="zvyraz" 
+  align="left" valign="top">
+    <td>Městský úřad</td>
+    <td>Hranice</td>
+    <td>U Pošty 182</td>
+    <td>Hranice</td>
+    <td nowrap>351 24</td>
+    <td><a href="http://www.mestohranice.cz/" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  align="left" valign="top">
+    <td>Městský úřad</td>
+    <td>Hroznětín</td>
+    <td>Krušnohorské náměstí 1</td>
+    <td>Hroznětín</td>
+    <td nowrap>362 33</td>
+    <td><a href="http://www.mestohroznetin.cz/" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  class="zvyraz" 
+  align="left" valign="top">
+    <td>Městský úřad</td>
+    <td>Cheb</td>
+    <td>nám. Krále Jiřího z Poděbrad 1/14</td>
+    <td>Cheb</td>
+    <td nowrap>350 02</td>
+    <td><a href="http://www.mestocheb.cz/vismo/dokumenty2.asp?u=5091&id_org=5091&id=751825&p1=21245&p2=&p3" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  align="left" valign="top">
+    <td>Obecní úřad</td>
+    <td>Chlum Svaté Maří</td>
+    <td>náměstí J. W. Goetheho 26</td>
+    <td>Chlum Svaté Maří</td>
+    <td nowrap>35709</td>
+    <td><a href="http://www.volny.cz/chlum-sv-mari" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  class="zvyraz" 
+  align="left" valign="top">
+    <td>Obecní úřad</td>
+    <td>Chodov</td>
+    <td> 90</td>
+    <td>Chodov</td>
+    <td nowrap>36464</td>
+    <td><a href="http://www.obecni-urad.net/source/index.php?id=1110" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  align="left" valign="top">
+    <td>Městský úřad</td>
+    <td>Chodov</td>
+    <td>Komenského 1077</td>
+    <td>Chodov</td>
+    <td nowrap>357 35</td>
+    <td><a href="http://www.mestochodov.cz" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  class="zvyraz" 
+  align="left" valign="top">
+    <td>Obecní úřad</td>
+    <td>Chyše</td>
+    <td>Žižkovo náměstí 18</td>
+    <td>Chyše</td>
+    <td nowrap>36453</td>
+    <td><a href="http://mesta.obce.cz/chyse" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  align="left" valign="top">
+    <td>Městský úřad</td>
+    <td>Jáchymov</td>
+    <td>náměstí Republiky 1</td>
+    <td>Jáchymov</td>
+    <td nowrap>362 51</td>
+    <td><a href="http://www.mestojachymov.cz" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  class="zvyraz" 
+  align="left" valign="top">
+    <td>Obecní úřad</td>
+    <td>Jenišov</td>
+    <td> 88</td>
+    <td>Jenišov</td>
+    <td nowrap>36001</td>
+    <td><a href="http://www.jenisov.cz" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  align="left" valign="top">
+    <td>Obecní úřad</td>
+    <td>Jindřichovice</td>
+    <td> 232</td>
+    <td>Jindřichovice</td>
+    <td nowrap>35801</td>
+    <td><a href="http://www.obecjindrichovice.cz" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  class="zvyraz" 
+  align="left" valign="top">
+    <td>Obecní úřad</td>
+    <td>Josefov</td>
+    <td> 12</td>
+    <td>Josefov</td>
+    <td nowrap>35709</td>
+    <td><a href="http://www.obecjosefov.cz/" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  align="left" valign="top">
+    <td>Obecní úřad</td>
+    <td>Kaceřov</td>
+    <td> 32</td>
+    <td>Kaceřov</td>
+    <td nowrap>35751</td>
+    <td><a href="http://www.kr-karlovarsky.cz/kacerov/obec" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  class="zvyraz" 
+  align="left" valign="top">
+    <td>Krajský úřad</td>
+    <td>Karlovarský kraj</td>
+    <td>Závodní 353/88</td>
+    <td>Karlovy Vary</td>
+    <td nowrap>360 21</td>
+    <td><a href="http://www.kr-karlovarsky.cz" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  align="left" valign="top">
+    <td>Magistrát města</td>
+    <td>Karlovy Vary</td>
+    <td>Moskevská 21</td>
+    <td>Karlovy Vary</td>
+    <td nowrap>361 20</td>
+    <td><a href="http://www.mmkv.cz/index.asp?menu=9&category=15" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  class="zvyraz" 
+  align="left" valign="top">
+    <td>Obecní úřad</td>
+    <td>Kolová</td>
+    <td>16</td>
+    <td>Kolová</td>
+    <td nowrap>362 14</td>
+    <td><a href="http://www.kolova-haje.cz" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  align="left" valign="top">
+    <td>Obecní úřad</td>
+    <td>Krajková</td>
+    <td>č.p. 295</td>
+    <td>Krajková</td>
+    <td nowrap>357 08</td>
+    <td><a href="http://www.krajkova.cz" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  class="zvyraz" 
+  align="left" valign="top">
+    <td>Obecní úřad</td>
+    <td>Královské Poříčí</td>
+    <td>Lázeňská 114</td>
+    <td>Královské Poříčí</td>
+    <td nowrap>357 41</td>
+    <td><a href="http://www.kralovske-porici.cz" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  align="left" valign="top">
+    <td>Městský úřad</td>
+    <td>Kraslice</td>
+    <td>nám. 28. října 1438/6</td>
+    <td>Kraslice</td>
+    <td nowrap>358 01</td>
+    <td><a href="http://www.kraslice.cz/" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  class="zvyraz" 
+  align="left" valign="top">
+    <td>Obecní úřad</td>
+    <td>Krásná</td>
+    <td>č.p. 196</td>
+    <td>Krásná</td>
+    <td nowrap>351 22</td>
+    <td><a href="http://www.obeckrasna.cz" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  align="left" valign="top">
+    <td>Obecní úřad</td>
+    <td>Krásné Údolí</td>
+    <td> 77</td>
+    <td>Krásné Údolí</td>
+    <td nowrap>36401</td>
+    <td><a href="http://www.krasneudoli.cz" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  class="zvyraz" 
+  align="left" valign="top">
+    <td>Obecní úřad</td>
+    <td>Krásno</td>
+    <td>Radniční 1</td>
+    <td>Krásno</td>
+    <td nowrap>35731</td>
+    <td><a href="http://www.mesto-krasno.cz" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  align="left" valign="top">
+    <td>Obecní úřad</td>
+    <td>Krásný Les</td>
+    <td> 20</td>
+    <td>Krásný Les</td>
+    <td nowrap>36301</td>
+    <td><a href="http://www.obecni-urad.net/source/index.php?ID=7714" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  class="zvyraz" 
+  align="left" valign="top">
+    <td>Obecní úřad</td>
+    <td>Křižovatka</td>
+    <td> 26</td>
+    <td>Křižovatka</td>
+    <td nowrap>35134</td>
+    <td><a href="http://www.kr-karlovarsky.cz/obce/Krizovatka/" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  align="left" valign="top">
+    <td>Městský úřad</td>
+    <td>Kynšperk nad Ohří</td>
+    <td>Jana A. Komenského 221/13</td>
+    <td>Kynšperk nad Ohří</td>
+    <td nowrap>357 51</td>
+    <td><a href="http://www.kynsperk.cz" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  class="zvyraz" 
+  align="left" valign="top">
+    <td>Obecní úřad</td>
+    <td>Kyselka</td>
+    <td>č.p. 118</td>
+    <td>Kyselka</td>
+    <td nowrap>362 72</td>
+    <td><a href="http://www.obeckyselka.cz" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  align="left" valign="top">
+    <td>Městský úřad</td>
+    <td>Lázně Kynžvart</td>
+    <td>nám. Republiky 1</td>
+    <td>Lázně Kynžvart</td>
+    <td nowrap>354 91</td>
+    <td><a href="http://www.laznekynzvart.cz/" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  class="zvyraz" 
+  align="left" valign="top">
+    <td>Obecní úřad</td>
+    <td>Libá</td>
+    <td>č.p. 220</td>
+    <td>Libá</td>
+    <td nowrap>351 31</td>
+    <td><a href="http://www.obec-liba.eu/" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  align="left" valign="top">
+    <td>Obecní úřad</td>
+    <td>Libavské Údolí</td>
+    <td>č.p. 110</td>
+    <td>Libavské Údolí</td>
+    <td nowrap>35751</td>
+    <td><a href="http://libavskeudoli.obec.cz" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  class="zvyraz" 
+  align="left" valign="top">
+    <td>Obecní úřad</td>
+    <td>Lipová</td>
+    <td> 130</td>
+    <td>Lipová</td>
+    <td nowrap>35002</td>
+    <td><a href="http://www.obeclipova.eu/" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  align="left" valign="top">
+    <td>Městský úřad</td>
+    <td>Loket</td>
+    <td>T. G. Masaryka 1/69</td>
+    <td>Loket</td>
+    <td nowrap>357 33</td>
+    <td><a href="http://www.loket.cz/" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  class="zvyraz" 
+  align="left" valign="top">
+    <td>Obecní úřad</td>
+    <td>Lomnice</td>
+    <td>Kraslická 44</td>
+    <td>Lomnice</td>
+    <td nowrap>356 01</td>
+    <td><a href="http://www.volweb.cz/ou-lomnice/" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  align="left" valign="top">
+    <td>Městský úřad</td>
+    <td>Luby</td>
+    <td>nám. 5. května 164</td>
+    <td>Luby</td>
+    <td nowrap>351 37</td>
+    <td><a href="http://www.mestoluby.cz/" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  class="zvyraz" 
+  align="left" valign="top">
+    <td>Městský úřad</td>
+    <td>Mariánské Lázně</td>
+    <td>Ruská 155/3</td>
+    <td>Mariánské Lázně</td>
+    <td nowrap>353 01</td>
+    <td><a href="http://www.marianskelazne.cz/cs/mestska-samosprava/czechpoint/" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  align="left" valign="top">
+    <td>Obecní úřad</td>
+    <td>Merklín</td>
+    <td>č. 6</td>
+    <td>Merklín</td>
+    <td nowrap>362 34</td>
+    <td><a href="http://www.obecmerklin.cz" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  class="zvyraz" 
+  align="left" valign="top">
+    <td>Obecní úřad</td>
+    <td>Městys Svatava</td>
+    <td>ČSA 277</td>
+    <td>Svatava</td>
+    <td nowrap>357 03</td>
+    <td><a href="http://www.kr-karlovarsky.cz/svatava/obec" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  align="left" valign="top">
+    <td>Obecní úřad</td>
+    <td>Milhostov</td>
+    <td> 68</td>
+    <td>Milhostov</td>
+    <td nowrap>35002</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr 
+  class="zvyraz" 
+  align="left" valign="top">
+    <td>Obecní úřad</td>
+    <td>Milíkov</td>
+    <td> 1</td>
+    <td>Milíkov</td>
+    <td nowrap>35002</td>
+    <td><a href="http://www.milikov.cz/" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  align="left" valign="top">
+    <td>Obecní úřad</td>
+    <td>Mírová</td>
+    <td> 40</td>
+    <td>Mírová</td>
+    <td nowrap>35735</td>
+    <td><a href="http://www.obec-mirova.cz/" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  class="zvyraz" 
+  align="left" valign="top">
+    <td>Obecní úřad</td>
+    <td>Mnichov</td>
+    <td> 1</td>
+    <td>Mnichov</td>
+    <td nowrap>35301</td>
+    <td><a href="http://ou-mnichov.cz" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  align="left" valign="top">
+    <td>Obecní úřad</td>
+    <td>Nebanice</td>
+    <td>7</td>
+    <td>Nebanice</td>
+    <td nowrap>350 02</td>
+    <td><a href="http://www.kr-karlovarsky.cz/obce/nebanice/" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  class="zvyraz" 
+  align="left" valign="top">
+    <td>Městský úřad</td>
+    <td>Nejdek</td>
+    <td>Náměstí Karla IV. 239</td>
+    <td>Nejdek</td>
+    <td nowrap>362 21</td>
+    <td><a href="http://www.kr-karlovarsky.cz/nejdek/MeU/CzechPoint/" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  align="left" valign="top">
+    <td>Městský úřad</td>
+    <td>Nová Role</td>
+    <td>Chodovská 236</td>
+    <td>Nová Role</td>
+    <td nowrap>362 25</td>
+    <td><a href="http://www.novarole.cz/" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  class="zvyraz" 
+  align="left" valign="top">
+    <td>Obecní úřad</td>
+    <td>Nová Ves</td>
+    <td> 199</td>
+    <td>Nová Ves</td>
+    <td nowrap>36464</td>
+    <td><a href="http://ounovaves.blog.cz/" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  align="left" valign="top">
+    <td>Obecní úřad</td>
+    <td>Nové Hamry</td>
+    <td>274</td>
+    <td>Nové Hamry</td>
+    <td nowrap>362 21</td>
+    <td><a href="http://mesta.obce.cz/nove-hamry" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  class="zvyraz" 
+  align="left" valign="top">
+    <td>Městský úřad</td>
+    <td>Nové Sedlo</td>
+    <td>Masarykova 502</td>
+    <td>Nové Sedlo</td>
+    <td nowrap>357 34</td>
+    <td><a href="http://www.mestonovesedlo.cz/" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  align="left" valign="top">
+    <td>Obecní úřad</td>
+    <td>Nový Kostel</td>
+    <td> 27</td>
+    <td>Nový Kostel</td>
+    <td nowrap>35134</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr 
+  class="zvyraz" 
+  align="left" valign="top">
+    <td>Obecní úřad</td>
+    <td>Odrava</td>
+    <td> 22</td>
+    <td>Odrava</td>
+    <td nowrap>35002</td>
+    <td><a href="http://www.odrava.cz" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  align="left" valign="top">
+    <td>Obecní úřad</td>
+    <td>Okrouhlá</td>
+    <td> 47</td>
+    <td>Okrouhlá</td>
+    <td nowrap>35002</td>
+    <td><a href="http://www.kr-karlovarsky.cz/obce/Okrouhla/" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  class="zvyraz" 
+  align="left" valign="top">
+    <td>Městský úřad</td>
+    <td>Oloví</td>
+    <td>Hory 42</td>
+    <td>Oloví</td>
+    <td nowrap>357 07</td>
+    <td><a href="http://www.olovi.cz/" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  align="left" valign="top">
+    <td>Městský úřad</td>
+    <td>Ostrov</td>
+    <td>Klínovecká 1204</td>
+    <td>Ostrov</td>
+    <td nowrap>363 01</td>
+    <td><a href="http://www.ostrov.cz " target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  class="zvyraz" 
+  align="left" valign="top">
+    <td>Obecní úřad</td>
+    <td>Otovice</td>
+    <td>Hroznětínská 130</td>
+    <td>Otovice</td>
+    <td nowrap>362 32</td>
+    <td><a href="http://www.otovice.cz/" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  align="left" valign="top">
+    <td>Obecní úřad</td>
+    <td>Otročín</td>
+    <td>48</td>
+    <td>Otročín</td>
+    <td nowrap>364 63</td>
+    <td><a href="http://www.volny.cz/otrocin/" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  class="zvyraz" 
+  align="left" valign="top">
+    <td>Obecní úřad</td>
+    <td>Ovesné Kladruby</td>
+    <td> 16</td>
+    <td>Ovesné Kladruby</td>
+    <td nowrap>35301</td>
+    <td><a href="http://www.ovesnekladruby.cz" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  align="left" valign="top">
+    <td>Obecní úřad</td>
+    <td>Pernink</td>
+    <td>T. G. Masaryka 1</td>
+    <td>Pernink</td>
+    <td nowrap>362 36</td>
+    <td><a href="http://www.obecpernink.cz/" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  class="zvyraz" 
+  align="left" valign="top">
+    <td>Obecní úřad</td>
+    <td>Pila</td>
+    <td> 97</td>
+    <td>Pila</td>
+    <td nowrap>36001</td>
+    <td><a href="http://www.kr-karlovarsky.cz/obce/pila" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  align="left" valign="top">
+    <td>Městský úřad</td>
+    <td>Plesná</td>
+    <td>5. května 301</td>
+    <td>Plesná</td>
+    <td nowrap>351 35</td>
+    <td><a href="http://www.mestoplesna.cz" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  class="zvyraz" 
+  align="left" valign="top">
+    <td>Obecní úřad</td>
+    <td>Podhradí</td>
+    <td>Podhradí 55</td>
+    <td>Aš 1</td>
+    <td nowrap>352 01</td>
+    <td><a href="http://www.oupodhradi.cz" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  align="left" valign="top">
+    <td>Obecní úřad</td>
+    <td>Pomezí nad Ohří</td>
+    <td>Pomezí nad Ohří 18</td>
+    <td>Cheb</td>
+    <td nowrap>350 02</td>
+    <td><a href="http://www.kr-karlovarsky.cz/obce/Pomezi" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  class="zvyraz" 
+  align="left" valign="top">
+    <td>Obecní úřad</td>
+    <td>Potůčky</td>
+    <td> 58</td>
+    <td>Potůčky</td>
+    <td nowrap>36235</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr 
+  align="left" valign="top">
+    <td>Obecní úřad</td>
+    <td>Poustka</td>
+    <td>Poustka 33</td>
+    <td>Cheb</td>
+    <td nowrap>350 02</td>
+    <td><a href="http://www.poustka.cz" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  class="zvyraz" 
+  align="left" valign="top">
+    <td>Městský úřad</td>
+    <td>Přebuz</td>
+    <td>Přebuz 7</td>
+    <td>Kraslice</td>
+    <td nowrap>358 01</td>
+    <td><a href="http://www.prebuz.cz" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  align="left" valign="top">
+    <td>Obecní úřad</td>
+    <td>Pšov</td>
+    <td> 48</td>
+    <td>Pšov</td>
+    <td nowrap>36452</td>
+    <td><a href="http://psov.cz" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  class="zvyraz" 
+  align="left" valign="top">
+    <td>Městský úřad</td>
+    <td>Rotava</td>
+    <td>Sídliště 721</td>
+    <td>Rotava</td>
+    <td nowrap>357 01</td>
+    <td><a href="http://www.rotava.cz" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  align="left" valign="top">
+    <td>Obecní úřad</td>
+    <td>Sadov</td>
+    <td>34</td>
+    <td>Sadov</td>
+    <td nowrap>362 61</td>
+    <td><a href="http://www.sadov.cz" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  class="zvyraz" 
+  align="left" valign="top">
+    <td>Městský úřad</td>
+    <td>Skalná</td>
+    <td>Sportovní 9</td>
+    <td>Skalná</td>
+    <td nowrap>351 34</td>
+    <td><a href="http://www.skalna.cz" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  align="left" valign="top">
+    <td>Obecní úřad</td>
+    <td>Smolné Pece</td>
+    <td>Smolné Pece 143</td>
+    <td>Nová Role</td>
+    <td nowrap>362 25</td>
+    <td><a href="http://www.smolnepece.unas.cz" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  class="zvyraz" 
+  align="left" valign="top">
+    <td>Městský úřad</td>
+    <td>Sokolov</td>
+    <td>Rokycanova 1929</td>
+    <td>Sokolov</td>
+    <td nowrap>356 01</td>
+    <td><a href="http://www.sokolov.cz/" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  align="left" valign="top">
+    <td>Obecní úřad</td>
+    <td>Stanovice</td>
+    <td>44</td>
+    <td>Stanovice</td>
+    <td nowrap>360 01</td>
+    <td><a href="http://www.obecstanovice.cz" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  class="zvyraz" 
+  align="left" valign="top">
+    <td>Obecní úřad</td>
+    <td>Stará Voda</td>
+    <td> 88</td>
+    <td>Stará Voda</td>
+    <td nowrap>35301</td>
+    <td><a href="http://www.staravoda.cz/" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  align="left" valign="top">
+    <td>Obecní úřad</td>
+    <td>Staré Sedlo</td>
+    <td>Zámecká 100</td>
+    <td>Staré Sedlo</td>
+    <td nowrap>35601</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr 
+  class="zvyraz" 
+  align="left" valign="top">
+    <td>Obecní úřad</td>
+    <td>Stráž nad Ohří</td>
+    <td> 21</td>
+    <td>Stráž nad Ohří</td>
+    <td nowrap>36301</td>
+    <td><a href="http://obecni-urad.net/straz_nad_ohri" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  align="left" valign="top">
+    <td>Obecní úřad</td>
+    <td>Stříbrná</td>
+    <td>670</td>
+    <td>Stříbrná</td>
+    <td nowrap>358 01</td>
+    <td><a href="http://www.stribrna.cz" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  class="zvyraz" 
+  align="left" valign="top">
+    <td>Obecní úřad</td>
+    <td>Šabina</td>
+    <td>Šabina 80</td>
+    <td>Sokolov</td>
+    <td nowrap>356 01</td>
+    <td><a href="http://www.obec-sabina.cz" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  align="left" valign="top">
+    <td>Obecní úřad</td>
+    <td>Šindelová</td>
+    <td> 117</td>
+    <td>Šindelová</td>
+    <td nowrap>35706</td>
+    <td><a href="http://www.volny.cz/ou_sindelova" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  class="zvyraz" 
+  align="left" valign="top">
+    <td>Obecní úřad</td>
+    <td>Štědrá</td>
+    <td> 43</td>
+    <td>Štědrá</td>
+    <td nowrap>36452</td>
+    <td><a href="http://www.stedra.cz" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  align="left" valign="top">
+    <td>Obecní úřad</td>
+    <td>Tatrovice</td>
+    <td> 26</td>
+    <td>Tatrovice</td>
+    <td nowrap>35735</td>
+    <td><a href="http://tatrovice.cz" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  class="zvyraz" 
+  align="left" valign="top">
+    <td>Městský úřad</td>
+    <td>Teplá</td>
+    <td>Masarykovo náměstí 143</td>
+    <td>Teplá</td>
+    <td nowrap>364 61</td>
+    <td><a href="http://www.tepla.cz" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  align="left" valign="top">
+    <td>Obecní úřad</td>
+    <td>Teplička</td>
+    <td> 40</td>
+    <td>Teplička</td>
+    <td nowrap>36464</td>
+    <td><a href="http://www.teplicka.cz" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  class="zvyraz" 
+  align="left" valign="top">
+    <td>Obecní úřad</td>
+    <td>Těšovice</td>
+    <td> 21</td>
+    <td>Těšovice</td>
+    <td nowrap>35601</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr 
+  align="left" valign="top">
+    <td>Městský úřad</td>
+    <td>Toužim</td>
+    <td>Sídliště 428</td>
+    <td>Toužim</td>
+    <td nowrap>364 01</td>
+    <td><a href="http://www.touzim.cz" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  class="zvyraz" 
+  align="left" valign="top">
+    <td>Obecní úřad</td>
+    <td>Trstěnice</td>
+    <td> 85</td>
+    <td>Trstěnice</td>
+    <td nowrap>35301</td>
+    <td><a href="http://trstenice.kolonial.info" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  align="left" valign="top">
+    <td>Obecní úřad</td>
+    <td>Třebeň</td>
+    <td> 31</td>
+    <td>Třebeň</td>
+    <td nowrap>35134</td>
+    <td><a href="http://www.kr-karlovarsky.cz/obce/Treben/Treb_urad/" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  class="zvyraz" 
+  align="left" valign="top">
+    <td>Obecní úřad</td>
+    <td>Tři Sekery</td>
+    <td>č.p. 82</td>
+    <td>Tři Sekery</td>
+    <td nowrap>35301</td>
+    <td><a href="http://trisekery.cz" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  align="left" valign="top">
+    <td>Obecní úřad</td>
+    <td>Tuřany</td>
+    <td> 7</td>
+    <td>Tuřany</td>
+    <td nowrap>35002</td>
+    <td><a href="http://kr-karlovarsky.cz/obce/turany" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  class="zvyraz" 
+  align="left" valign="top">
+    <td>Obecní úřad</td>
+    <td>Útvina</td>
+    <td>č.p. 163</td>
+    <td>Útvina</td>
+    <td nowrap>36401</td>
+    <td><a href="http://www.utvina.cz" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  align="left" valign="top">
+    <td>Obecní úřad</td>
+    <td>Valeč</td>
+    <td>Náměstí 119</td>
+    <td>Valeč</td>
+    <td nowrap>364 55</td>
+    <td><a href="http://www.valec.cz" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  class="zvyraz" 
+  align="left" valign="top">
+    <td>Obecní úřad</td>
+    <td>Valy</td>
+    <td>V Lukách 21</td>
+    <td>Valy</td>
+    <td nowrap>35301</td>
+    <td><a href="http://www.obecvaly.cz" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  align="left" valign="top">
+    <td>Obecní úřad</td>
+    <td>Velichov</td>
+    <td>Velichov 13</td>
+    <td>Ostrov</td>
+    <td nowrap>363 01</td>
+    <td><a href="http://www.velichov.cz" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  class="zvyraz" 
+  align="left" valign="top">
+    <td>Obecní úřad</td>
+    <td>Velká Hleďsebe</td>
+    <td>Plzeňská 32</td>
+    <td>Velká Hleďsebe</td>
+    <td nowrap>353 01</td>
+    <td><a href="http://www.velkahledsebe.cz" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  align="left" valign="top">
+    <td>Obecní úřad</td>
+    <td>Velký Luh</td>
+    <td> 22</td>
+    <td>Velký Luh</td>
+    <td nowrap>35134</td>
+    <td><a href="http://www.kr-karlovarsky.cz/obce/Velky_Luh/" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  class="zvyraz" 
+  align="left" valign="top">
+    <td>Obecní úřad</td>
+    <td>Verušičky</td>
+    <td>5</td>
+    <td>Verušičky</td>
+    <td nowrap>364 56</td>
+    <td><a href="http://www.obecverusicky.cz" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  align="left" valign="top">
+    <td>Obecní úřad</td>
+    <td>Vintířov</td>
+    <td>62</td>
+    <td>Vintířov</td>
+    <td nowrap>357 44</td>
+    <td><a href="http://www.vintirov.cz" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  class="zvyraz" 
+  align="left" valign="top">
+    <td>Obecní úřad</td>
+    <td>Vlkovice</td>
+    <td>Vlkovice 21    </td>
+    <td>Mariánské Lázně</td>
+    <td nowrap>353 01</td>
+    <td><a href="http://www.vlkovice.cz" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  align="left" valign="top">
+    <td>Újezdní úřad vojenského újezdu</td>
+    <td>Vojenský újezd Hradiště</td>
+    <td>ul. 1. máje 5/3</td>
+    <td>Karlovy Vary</td>
+    <td nowrap>360 06</td>
+    <td><a href="http://www.vojujezd-hradiste.cz/" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  class="zvyraz" 
+  align="left" valign="top">
+    <td>Obecní úřad</td>
+    <td>Vojkovice</td>
+    <td>57</td>
+    <td>Vojkovice</td>
+    <td nowrap>362 73</td>
+    <td><a href="http://www.vojkovice-nad-ohri.cz" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  align="left" valign="top">
+    <td>Obecní úřad</td>
+    <td>Vojtanov</td>
+    <td>Horní Vojtanov 40</td>
+    <td>Vojtanov</td>
+    <td nowrap>351 34</td>
+    <td><a href="http://www.vojtanov.cz" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  class="zvyraz" 
+  align="left" valign="top">
+    <td>Obecní úřad</td>
+    <td>Vrbice</td>
+    <td>Vrbice 45</td>
+    <td>Žlutice</td>
+    <td nowrap>364 52</td>
+    <td><a href="http://www.obec-vrbice.cz" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  align="left" valign="top">
+    <td>Obecní úřad</td>
+    <td>Vřesová</td>
+    <td> 3</td>
+    <td>Vřesová</td>
+    <td nowrap>35735</td>
+    <td><a href="http://www.volny.cz/ou_vresova" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  class="zvyraz" 
+  align="left" valign="top">
+    <td>Obecní úřad</td>
+    <td>Vysoká Pec</td>
+    <td> 109</td>
+    <td>Vysoká Pec</td>
+    <td nowrap>36221</td>
+    <td><a href="http://www.vysokapec.eu" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  align="left" valign="top">
+    <td>Obecní úřad</td>
+    <td>Zádub-Závišín</td>
+    <td>Zádub 92</td>
+    <td>Mariánské Lázně</td>
+    <td nowrap>353 01</td>
+    <td><a href="http://www.kr-karlovarsky.cz" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+  <tr 
+  class="zvyraz" 
+  align="left" valign="top">
+    <td>Městský úřad</td>
+    <td>Žlutice</td>
+    <td>Velké náměstí 144</td>
+    <td>Žlutice</td>
+    <td nowrap>364 52</td>
+    <td><a href="http://www.zlutice.cz" target="_blank">www&nbsp;úřadu</a></td>
+  </tr>
+</table>
+  </div>
+
+
+</div>
+
+
+        </td>
+        <td width="15" colspan="2"><p class="radka"><img border="0" src="/web/themes/czechpoint/layout/2x2.gif" width="15" height="15" alt=""></p></td>
+        <td width="205" align="left" valign="top" colspan="2">
+        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="line-height: 75%;">
+          <tr>
+            <td width="100%"><p class="radka"><img border="0" src="/web/themes/czechpoint/layout/novinky/title.jpg" width="205" height="54" alt="Novinky"></p></td>
+          </tr>
+          <tr>
+            <td width="100%"><p class="radka"><img border="0" src="/web/themes/czechpoint/layout/novinky/top.gif" width="205" height="15" alt=""></p></td>
+          </tr>
+          <tr>
+            <td width="100%" style="background-image: url('/web/themes/czechpoint/layout/novinky/bgr.gif')" align="left" valign="top">
+              <div id="block-views-novinky" class="clear-block block block-views">
+
+
+  <div class="content"><div class='view view-novinky'><div class='view-content view-content-novinky'><div class="item-list"><ul><li><div class='view-item view-item-novinky'><div class='view-field view-data-node-created'>25.11.2014</div><div class='view-field view-data-node-title'><a href="/web/?q=node/637">12 milionů výpisů</a></div></div>
+</li><li><div class='view-item view-item-novinky'><div class='view-field view-data-node-created'>12.11.2014</div><div class='view-field view-data-node-title'><a href="/web/?q=node/636">Vypnutí SSLv3</a></div></div>
+</li><li><div class='view-item view-item-novinky'><div class='view-field view-data-node-created'>7.10.2014</div><div class='view-field view-data-node-title'><a href="/web/?q=node/635">&quot;Elektronické volby&quot;</a></div></div>
+</li><li><div class='view-item view-item-novinky'><div class='view-field view-data-node-created'>8.9.2014</div><div class='view-field view-data-node-title'><a href="/web/?q=node/634">Volby do obecních zastupitelstev</a></div></div>
+</li><li><div class='view-item view-item-novinky'><div class='view-field view-data-node-created'>11.8.2014</div><div class='view-field view-data-node-title'><a href="/web/?q=node/633">Aktuální dostupnost služeb</a></div></div>
+</li><li><div class='view-item view-item-novinky'><div class='view-field view-data-node-created'>1.7.2014</div><div class='view-field view-data-node-title'><a href="/web/?q=node/631">5 let podpory ISDS</a></div></div>
+</li><li><div class='view-item view-item-novinky'><div class='view-field view-data-node-created'>10.6.2014</div><div class='view-field view-data-node-title'><a href="/web/?q=node/627">Ukončení podpory Microsoft Windows XP ve vztahu ke službám Czech POINT</a></div></div>
+</li><li><div class='view-item view-item-novinky'><div class='view-field view-data-node-created'>30.5.2014</div><div class='view-field view-data-node-title'><a href="/web/?q=node/626">11 milionů výpisů</a></div></div>
+</li><li><div class='view-item view-item-novinky'><div class='view-field view-data-node-created'>21.5.2014</div><div class='view-field view-data-node-title'><a href="/web/?q=node/625">Seminář o sdílených službách</a></div></div>
+</li><li><div class='view-item view-item-novinky'><div class='view-field view-data-node-created'>2.4.2014</div><div class='view-field view-data-node-title'><a href="/web/?q=node/624">Czech POINTu je 7 let</a></div></div>
+</li></ul></div></div></div>
+</div>
+</div>
+<div id="block-block-1" class="clear-block block block-block">
+
+
+  <div class="content"><p><a href="?q=novinky">Archiv novinek</a></p>
+</div>
+</div>
+<div id="block-block-2" class="clear-block block block-block">
+
+
+  <div class="content"><a href="?q=novinky2">Archiv zpráv</a></div>
+</div>
+            </td>
+          </tr>
+          <tr>
+            <td width="100%"><img border="0" src="/web/themes/czechpoint/layout/novinky/bottom.gif" width="205" height="15" alt=""></td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+      <tr>
+        <td align="left" valign="bottom" style="border: 0px solid #FFFFFF; line-height: 75%;">
+          <p class="copyright">&copy; 2014 Ministerstvo vnitra České republiky, všechna práva vyhrazena</p>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+    </td>
+    <td width="50%" onclick="changemenu('')" onmouseover="changemenu('')"></td>
+  </tr>
+</table>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-5801266-1");
+pageTracker._trackPageview();
+</script></div>
+
+</body>
+
+</html>
+
+

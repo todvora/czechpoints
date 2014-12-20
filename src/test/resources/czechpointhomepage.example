@@ -1,0 +1,529 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+
+<html>
+  <head>
+    <title>Czech POINT</title>
+     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <style type="text/css" media="all">@import "/web/modules/node/node.css";</style>
+<style type="text/css" media="all">@import "/web/modules/system/defaults.css";</style>
+<style type="text/css" media="all">@import "/web/modules/system/system.css";</style>
+<style type="text/css" media="all">@import "/web/modules/user/user.css";</style>
+<style type="text/css" media="all">@import "/web/modules/poll/poll.css";</style>
+<style type="text/css" media="all">@import "/web/sites/all/modules/cck/content.css";</style>
+<style type="text/css" media="all">@import "/web/sites/all/modules/panels/css/panels.css";</style>
+<style type="text/css" media="all">@import "/web/sites/all/modules/panels/layouts/twocol_bricks.css";</style>
+<style type="text/css" media="all">@import "/web/themes/czechpoint/style.css";</style>
+    <script type="text/javascript" src="/web/misc/jquery.js"></script>
+<script type="text/javascript" src="/web/misc/drupal.js"></script>
+<script type="text/javascript" src="/web/sites/all/modules/panels/js/panels.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="/web/themes/czechpoint/inc/pages.css">
+    <link rel="stylesheet" type="text/css" href="/web/themes/czechpoint/inc/divstyles.css">
+    <link rel="stylesheet" type="text/css" href="/web/themes/czechpoint/inc/find.css">
+    <script language="JavaScript" type="text/javascript" src="/web/themes/czechpoint/inc/main.js"></script>
+    <link rel="shortcut icon" href="/web/themes/czechpoint/layout/favicon.ico" >
+  </head>
+<body>
+
+<div
+id="obsah_stranky"><script language="JavaScript" type="text/javascript"><!--
+domOK = Boolean(document.getElementById);
+// domOK = false;
+
+function getWidth(element) {
+	var x;
+	return ((x=element.style.pixelWidth) || (x=element.clientWidth) || (x=element.offsetWidth) || (x=parseInt(element.style.width))) ? x : null;
+}
+
+function setOffset () {
+	if (domOK) {
+		offsetLeft = 0   ;
+		offsetTop  = 107 ;
+		browName  = navigator.appName              ;
+		browVerze = parseInt(navigator.appVersion) ;
+		if ( browName == "Microsoft Internet Explorer" ) {
+			sirka     = 806 ;
+			offsetTop = 107 ;
+		} else {
+			sirka     = 786 ;
+			offsetTop = 106 ;
+		} ;
+		var w      = (getWidth(document.documentElement)) ;
+		offsetLeft = Math.round( ( w - sirka ) / 2 )      ;
+		if (offsetLeft<0) {
+			offsetLeft = 0 ;
+		} ;
+	}
+}
+function resize() {
+	if (domOK) {
+		setOffset();
+		document.getElementById("menu1").style.left = (offsetLeft + 0) + "px";
+		document.getElementById("menu2").style.left = (offsetLeft + 140) + "px";
+		document.getElementById("menu3").style.left = (offsetLeft + 269) + "px";
+		document.getElementById("menu4").style.left = (offsetLeft + 399) + "px";
+		document.getElementById("menu5").style.left = (offsetLeft + 528) + "px";
+		document.getElementById("menu6").style.left = (offsetLeft + 657) + "px";
+		document.getElementById("menu1").style.top = "" + offsetTop + "px";
+		document.getElementById("menu2").style.top = "" + offsetTop + "px";
+		document.getElementById("menu3").style.top = "" + offsetTop + "px";
+		document.getElementById("menu4").style.top = "" + offsetTop + "px";
+		document.getElementById("menu5").style.top = "" + offsetTop + "px";
+		document.getElementById("menu6").style.top = "" + offsetTop + "px";
+	}
+}
+if (domOK) {
+	window.onresize = resize;
+	window.onload = resize;
+	setOffset();
+	document.write('<' + 'style type="text/css">');
+	document.write('#menu1 {left:' + (offsetLeft + 0) + 'px}');
+	document.write('#menu2 {left:' + (offsetLeft + 140) + 'px}');
+	document.write('#menu3 {left:' + (offsetLeft + 269) + 'px}');
+	document.write('#menu4 {left:' + (offsetLeft + 399) + 'px}');
+	document.write('#menu5 {left:' + (offsetLeft + 528) + 'px}');
+	document.write('#menu6 {left:' + (offsetLeft + 657) + 'px}');
+	document.write('</' + 'style>');
+}
+var saktual = "" ;
+function changemenu(id,vzdy) {
+	if ("S" + saktual == "S" + id) {
+		if ( ! vzdy ) {
+			id = "" ;
+		} ;
+	} ;
+	if ( saktual != "" ) {
+		// ShowSelects(true) ;
+		document.getElementById(saktual).style.display="none" ;
+	} ;
+	skryjElement( "home_banner", false ) ;
+	if ( id != "" ) {
+		// ShowSelects(false) ;
+		document.getElementById(id).style.display="" ;
+		if ( ( id == "menu1" ) || ( id == "menu3" ) ) {
+			skryjElement( "home_banner", true ) ;
+		} ;
+	} ;
+	saktual = id ;
+}
+function prejezd(uroven,id,nad) {
+	if (uroven == 2) {
+		if (nad == 1) {
+			document.getElementById(id).src = "/web/themes/czechpoint/layout/menu/active/" + id + ".jpg" ;
+		} else {
+			document.getElementById(id).src = "/web/themes/czechpoint/layout/menu/pasive/" + id + ".jpg" ;
+		} ;
+	} else {
+		if (nad == 1) {
+			// document.getElementById(id).style.background="#000000" ;
+		} else {
+			// document.getElementById(id).style.background="#00A9E2" ;
+		} ;
+	} ;
+}
+--></script>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tr>
+    <td width="50%" onclick="changemenu('')" onmouseover="changemenu('')"></td>
+    <td width="784">
+<table border="0" cellpadding="0" cellspacing="0" width="784">
+  <tr>
+    <td width="784" valign="top">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr>
+        <td width="100%" onclick="changemenu('')" onmouseover="changemenu('')"><p class="radka"><map name="MapMV"><area target="_blank"
+        alt="Ministerstvo vnitra ČR" title="Ministerstvo vnitra ČR" href="http://www.mvcr.cz/" shape="rect" coords="14, 16, 160, 62"></map><img
+        border="0" src="/web/themes/czechpoint/layout/top.jpg" usemap="#MapMV" width="784" height="80" alt="Ministerstvo vnitra ČR"></p></td>
+      </tr>
+      <tr>
+        <td width="100%">
+<div class="skryte">
+<h2><a name="menu">Navigace</a></h2>
+</div>
+<div class="radka">
+<table border="0" cellpadding="0" cellspacing="0" width="784">
+  <tr>
+    <td id="topmenu1" onmouseover="prejezd(1,'topmenu1',1);changemenu('menu1',1);" onmouseout="prejezd(1,'topmenu1',0)" class="topnavig"><a class="topnavig" href="/web/?q=node/62" onclick="changemenu('')" title="KDE JE CZECHPOINT"><img border="0" src="/web/themes/czechpoint/layout/menu/menu1.jpg" width="139" height="27" alt="KDE JE CZECHPOINT"></a></td>
+    <td><img border="0" src="/web/themes/czechpoint/layout/2x2.gif" width="1" height="1" alt=""></td>
+    <td id="topmenu2" onmouseover="prejezd(1,'topmenu2',1);changemenu('menu2',1);" onmouseout="prejezd(1,'topmenu2',0)" class="topnavig"><a class="topnavig" href="/web/?q=node/63" onclick="changemenu('')" title="O PROJEKTU"><img border="0" src="/web/themes/czechpoint/layout/menu/menu2.jpg" width="128" height="27" alt="O PROJEKTU"></a></td>
+    <td><img border="0" src="/web/themes/czechpoint/layout/2x2.gif" width="1" height="1" alt=""></td>
+    <td id="topmenu3" onmouseover="prejezd(1,'topmenu3',1);changemenu('menu3',1);" onmouseout="prejezd(1,'topmenu3',0)" class="topnavig"><a class="topnavig" href="/web/?q=node/64" onclick="changemenu('')" title="PRO KONTAKTNÍ MÍSTA"><img border="0" src="/web/themes/czechpoint/layout/menu/menu3.jpg" width="129" height="27" alt="PRO KONTAKTNÍ MÍSTA"></a></td>
+    <td><img border="0" src="/web/themes/czechpoint/layout/2x2.gif" width="1" height="1" alt=""></td>
+    <td id="topmenu4" onmouseover="prejezd(1,'topmenu4',1);changemenu('menu4',1);" onmouseout="prejezd(1,'topmenu4',0)" class="topnavig"><a class="topnavig" href="/web/?q=node/473" onclick="changemenu('')" title="KONVERZE DOKUMENTŮ"><img border="0" src="/web/themes/czechpoint/layout/menu/menu4.jpg" width="129" height="27" alt="KONVERZE DOKUMENTŮ"></a></td>
+    <td><img border="0" src="/web/themes/czechpoint/layout/2x2.gif" width="1" height="1" alt=""></td>
+    <td id="topmenu5" onmouseover="prejezd(1,'topmenu5',1);changemenu('menu5',1);" onmouseout="prejezd(1,'topmenu5',0)" class="topnavig"><a class="topnavig" href="/web/?q=node/124" onclick="changemenu('')" title="KONTAKTY"><img border="0" src="/web/themes/czechpoint/layout/menu/menu5.jpg" width="128" height="27" alt="KONTAKTY"></a></td>
+    <td><img border="0" src="/web/themes/czechpoint/layout/2x2.gif" width="1" height="1" alt=""></td>
+    <td id="topmenu6" onmouseover="prejezd(1,'topmenu6',1);changemenu('menu6',1);" onmouseout="prejezd(1,'topmenu6',0)" class="topnavig"><a class="topnavig" href="/web/?q=node/490" onclick="changemenu('')" title="STATISTIKY"><img border="0" src="/web/themes/czechpoint/layout/menu/menu6.jpg" width="126" height="27" alt="STATISTIKY"></a></td>
+  </tr>
+</table>
+</div>
+<div id="menu1" class="radka"
+style="display: none; position: absolute; z-index: 1; left: 0; top: 107; width: 139px; height: 340px; background-image: url('/web/themes/czechpoint/layout/menu/menu1_bgr.jpg'); background-repeat: no-repeat; background-position: left top;">
+<p class="subnavig"><img border="0" src="/web/themes/czechpoint/layout/2x2.gif" width="8" height="8" alt=""></p>
+<p class="subnavig"><a class="subnavig" href="/web/?q=node/55&amp;IDKRAJ=6&amp;IDOKRES=NULL&amp;DETAIL=NULL" title="Jihočeský kraj"><img id="menu11" onmouseover="prejezd(2,'menu11',1)" onmouseout="prejezd(2,'menu11',0)" border="0" src="/web/themes/czechpoint/layout/menu/pasive/menu11.jpg" alt="Jihočeský kraj"></a></p>
+<p class="subnavig"><a class="subnavig" href="/web/?q=node/55&amp;IDKRAJ=12&amp;IDOKRES=NULL&amp;DETAIL=NULL" title="Jihomoravský kraj"><img id="menu12" onmouseover="prejezd(2,'menu12',1)" onmouseout="prejezd(2,'menu12',0)" border="0" src="/web/themes/czechpoint/layout/menu/pasive/menu12.jpg" alt="Jihomoravský kraj"></a></p>
+<p class="subnavig"><a class="subnavig" href="/web/?q=node/55&amp;IDKRAJ=8&amp;IDOKRES=NULL&amp;DETAIL=NULL" title="Karlovarský kraj"><img id="menu13" onmouseover="prejezd(2,'menu13',1)" onmouseout="prejezd(2,'menu13',0)" border="0" src="/web/themes/czechpoint/layout/menu/pasive/menu13.jpg" alt="Karlovarský kraj"></a></p>
+<p class="subnavig"><a class="subnavig" href="/web/?q=node/55&amp;IDKRAJ=13&amp;IDOKRES=NULL&amp;DETAIL=NULL" title="Královéhradecký kraj"><img id="menu14" onmouseover="prejezd(2,'menu14',1)" onmouseout="prejezd(2,'menu14',0)" border="0" src="/web/themes/czechpoint/layout/menu/pasive/menu14.jpg" alt="Královéhradecký kraj"></a></p>
+<p class="subnavig"><a class="subnavig" href="/web/?q=node/55&amp;IDKRAJ=7&amp;IDOKRES=NULL&amp;DETAIL=NULL" title="Liberecký kraj"><img id="menu15" onmouseover="prejezd(2,'menu15',1)" onmouseout="prejezd(2,'menu15',0)" border="0" src="/web/themes/czechpoint/layout/menu/pasive/menu15.jpg" alt="Liberecký kraj"></a></p>
+<p class="subnavig"><a class="subnavig" href="/web/?q=node/55&amp;IDKRAJ=15&amp;IDOKRES=NULL&amp;DETAIL=NULL" title="Moravskoslezský kraj"><img id="menu16" onmouseover="prejezd(2,'menu16',1)" onmouseout="prejezd(2,'menu16',0)" border="0" src="/web/themes/czechpoint/layout/menu/pasive/menu16.jpg" alt="Moravskoslezský kraj"></a></p>
+<p class="subnavig"><a class="subnavig" href="/web/?q=node/55&amp;IDKRAJ=3&amp;IDOKRES=NULL&amp;DETAIL=NULL" title="Olomoucký kraj"><img id="menu17" onmouseover="prejezd(2,'menu17',1)" onmouseout="prejezd(2,'menu17',0)" border="0" src="/web/themes/czechpoint/layout/menu/pasive/menu17.jpg" alt="Olomoucký kraj"></a></p>
+<p class="subnavig"><a class="subnavig" href="/web/?q=node/55&amp;IDKRAJ=2&amp;IDOKRES=NULL&amp;DETAIL=NULL" title="Pardubický kraj"><img id="menu18" onmouseover="prejezd(2,'menu18',1)" onmouseout="prejezd(2,'menu18',0)" border="0" src="/web/themes/czechpoint/layout/menu/pasive/menu18.jpg" alt="Pardubický kraj"></a></p>
+<p class="subnavig"><a class="subnavig" href="/web/?q=node/55&amp;IDKRAJ=5&amp;IDOKRES=NULL&amp;DETAIL=NULL" title="Plzeňský kraj"><img id="menu19" onmouseover="prejezd(2,'menu19',1)" onmouseout="prejezd(2,'menu19',0)" border="0" src="/web/themes/czechpoint/layout/menu/pasive/menu19.jpg" alt="Plzeňský kraj"></a></p>
+<p class="subnavig"><a class="subnavig" href="/web/?q=node/55&amp;IDKRAJ=1&amp;IDOKRES=NULL&amp;DETAIL=STREDO" title="Středočeský kraj"><img id="menu1A" onmouseover="prejezd(2,'menu1A',1)" onmouseout="prejezd(2,'menu1A',0)" border="0" src="/web/themes/czechpoint/layout/menu/pasive/menu1A.jpg" alt="Středočeský kraj"></a></p>
+<p class="subnavig"><a class="subnavig" href="/web/?q=node/55&amp;IDKRAJ=10&amp;IDOKRES=NULL&amp;DETAIL=NULL" title="Ústecký kraj"><img id="menu1B" onmouseover="prejezd(2,'menu1B',1)" onmouseout="prejezd(2,'menu1B',0)" border="0" src="/web/themes/czechpoint/layout/menu/pasive/menu1B.jpg" alt="Ústecký kraj"></a></p>
+<p class="subnavig"><a class="subnavig" href="/web/?q=node/55&amp;IDKRAJ=4&amp;IDOKRES=NULL&amp;DETAIL=NULL" title="Vysočina"><img id="menu1C" onmouseover="prejezd(2,'menu1C',1)" onmouseout="prejezd(2,'menu1C',0)" border="0" src="/web/themes/czechpoint/layout/menu/pasive/menu1C.jpg" alt="Vysočina"></a></p>
+<p class="subnavig"><a class="subnavig" href="/web/?q=node/55&amp;IDKRAJ=14&amp;IDOKRES=NULL&amp;DETAIL=NULL" title="Zlínský kraj"><img id="menu1D" onmouseover="prejezd(2,'menu1D',1)" onmouseout="prejezd(2,'menu1D',0)" border="0" src="/web/themes/czechpoint/layout/menu/pasive/menu1D.jpg" alt="Zlínský kraj"></a></p>
+<p class="subnavig"><a class="subnavig" href="/web/?q=node/55&amp;IDKRAJ=1&amp;IDOKRES=NULL&amp;DETAIL=PRAHA" title="Praha"><img id="menu1E" onmouseover="prejezd(2,'menu1E',1)" onmouseout="prejezd(2,'menu1E',0)" border="0" src="/web/themes/czechpoint/layout/menu/pasive/menu1E.jpg" alt="Praha"></a></p>
+<p class="subnavig"><a class="subnavig" href="/web/?q=node/61" title="Zahraničí"><img id="menu1F" onmouseover="prejezd(2,'menu1F',1)" onmouseout="prejezd(2,'menu1F',0)" border="0" src="/web/themes/czechpoint/layout/menu/pasive/menu1F.jpg" alt="Zahraničí"></a></p>
+<p class="subnavig"><img border="0" src="/web/themes/czechpoint/layout/2x2.gif" width="8" height="8" alt=""></p>
+</div>
+<div id="menu2" class="radka"
+style="display: none; position: absolute; z-index: 1; left: 140; top: 107; width: 128px; height: 174px; background-image: url('/web/themes/czechpoint/layout/menu/menu2_bgr4.jpg'); background-repeat: no-repeat; background-position: left top;">
+<p class="subnavig"><img border="0" src="/web/themes/czechpoint/layout/2x2.gif" width="8" height="8" alt=""></p>
+<p class="subnavig"><a class="subnavig" href="/web/?q=node/22" title="CO JE CZECH POINT"><img id="menu21c" onmouseover="prejezd(2,'menu21c',1)" onmouseout="prejezd(2,'menu21c',0)" border="0" src="/web/themes/czechpoint/layout/menu/pasive/menu21c.jpg" alt="CO JE CZECH POINT"></a></p>
+<p class="subnavig"><a class="subnavig" href="/web/?q=node/23" title="CO POSKYTUJE CZECH POINT"><img id="menu22c" onmouseover="prejezd(2,'menu22c',1)" onmouseout="prejezd(2,'menu22c',0)" border="0" src="/web/themes/czechpoint/layout/menu/pasive/menu22c.jpg" alt="CO POSKYTUJE CZECH POINT"></a></p>
+<p class="subnavig"><a class="subnavig" href="/web/?q=node/52" title="FAQ"><img id="menu23c" onmouseover="prejezd(2,'menu23c',1)" onmouseout="prejezd(2,'menu23c',0)" border="0" src="/web/themes/czechpoint/layout/menu/pasive/menu23c.jpg" alt="FAQ"></a></p>
+<p class="subnavig"><a class="subnavig" href="/web/?q=node/506" title="SLOVNÍK POJMŮ"><img id="menu24c" onmouseover="prejezd(2,'menu24c',1)" onmouseout="prejezd(2,'menu24c',0)" border="0" src="/web/themes/czechpoint/layout/menu/pasive/menu24c.jpg" alt="SLOVNÍK POJMŮ"></a></p>
+<p class="subnavig"><a class="subnavig" href="/web/?q=node/628" title="AKUÁLNÍ DOSTUPNOST SLUŽEB"><img id="menu25c" onmouseover="prejezd(2,'menu25c',1)" onmouseout="prejezd(2,'menu25c',0)" border="0" src="/web/themes/czechpoint/layout/menu/pasive/menu25c.jpg" alt="AKUÁLNÍ DOSTUPNOST SLUŽEB"></a></p>
+<!-- <p class="subnavig"><a class="subnavig" href="?q=zpravy" title="ZPRÁVY Z PROVOZU"><img id="menu23" onmouseover="prejezd(2,'menu23',1)" onmouseout="prejezd(2,'menu23',0)" border="0" src="/web/themes/czechpoint/layout/menu/pasive/menu23.jpg" alt="ZPRÁVY Z PROVOZU"></a></p> //-->
+<p class="subnavig"><img border="0" src="/web/themes/czechpoint/layout/2x2.gif" width="8" height="8" alt=""></p>
+</div>
+<div id="menu3" class="radka"
+style="display: none; position: absolute; z-index: 1; left: 269; top: 107; width: 129px; height: 129px; background-image: url('/web/themes/czechpoint/layout/menu/menu3_bgr2.jpg'); background-repeat: no-repeat; background-position: left top;">
+<p class="subnavig"><img border="0" src="/web/themes/czechpoint/layout/2x2.gif" width="8" height="8" alt=""></p>
+<p class="subnavig"><a class="subnavig" href="/web/?q=node/458" title="ZŘIĎTE SI CZECH POINT"><img id="menu31b" onmouseover="prejezd(2,'menu31b',1)" onmouseout="prejezd(2,'menu31b',0)" border="0" src="/web/themes/czechpoint/layout/menu/pasive/menu31b.jpg" alt="ZŘIĎTE SI CZECH POINT"></a></p>
+<p class="subnavig"><a class="subnavig" href="/web/?q=node/29" title="ŠKOLENÍ PRACOVNÍKŮ"><img id="menu32b" onmouseover="prejezd(2,'menu32b',1)" onmouseout="prejezd(2,'menu32b',0)" border="0" src="/web/themes/czechpoint/layout/menu/pasive/menu32b.jpg" alt="ŠKOLENÍ PRACOVNÍKŮ"></a></p>
+<p class="subnavig"><a class="subnavig" href="/web/?q=node/25" title="DOKUMENTY KE STAŽENÍ"><img id="menu33b" onmouseover="prejezd(2,'menu33b',1)" onmouseout="prejezd(2,'menu33b',0)" border="0" src="/web/themes/czechpoint/layout/menu/pasive/menu33b.jpg" alt="DOKUMENTY KE STAŽENÍ"></a></p>
+<p class="subnavig"><a class="subnavig" href="/web/?q=node/483" title="PRAKTICKÉ INFORMACE"><img id="menu34b" onmouseover="prejezd(2,'menu34b',1)" onmouseout="prejezd(2,'menu34b',0)" border="0" src="/web/themes/czechpoint/layout/menu/pasive/menu34b.jpg" alt="PRAKTICKÉ INFORMACE"></a></p>
+<p class="subnavig"><img border="0" src="/web/themes/czechpoint/layout/2x2.gif" width="8" height="8" alt=""></p>
+</div>
+
+<div id="menu4" class="radka"
+style="display: none; position: absolute; z-index: 1; left: 399; top: 107; width: 130px; height: 205px; background-image: url('/web/themes/czechpoint/layout/menu/menu4_bgrB.jpg'); background-repeat: no-repeat; background-position: left top;">
+<p class="subnavig"><img border="0" src="/web/themes/czechpoint/layout/2x2.gif" width="8" height="8" alt=""></p>
+<p class="subnavig"><a class="subnavig" href="/web/?q=node/468" title="AUTORIZOVANÉ KONVERZE DOKUMENTŮ"><img id="menu41b" onmouseover="prejezd(2,'menu41b',1)" onmouseout="prejezd(2,'menu41b',0)" border="0" src="/web/themes/czechpoint/layout/menu/pasive/menu41b.jpg" alt="AUTORIZOVANÉ KONVERZE DOKUMENTŮ"></a></p>
+<p class="subnavig"><a class="subnavig" href="/web/?q=node/478" title="AUTORIZOVANÁ KONVERZE NA ŽÁDOST"><img id="menu42b" onmouseover="prejezd(2,'menu42b',1)" onmouseout="prejezd(2,'menu42b',0)" border="0" src="/web/themes/czechpoint/layout/menu/pasive/menu42b.jpg" alt="AUTORIZOVANÁ KONVERZE NA ŽÁDOST"></a></p>
+<p class="subnavig"><a class="subnavig" href="/web/?q=node/469" title="AUTORIZOVANÁ KONVERZE Z MOCI ÚŘEDNÍ - KzMÚ"><img id="menu43c" onmouseover="prejezd(2,'menu43c',1)" onmouseout="prejezd(2,'menu43c',0)" border="0" src="/web/themes/czechpoint/layout/menu/pasive/menu43c.jpg" alt="AUTORIZOVANÁ KONVERZE Z MOCI ÚŘEDNÍ - KzMÚ"></a></p>
+<p class="subnavig"><a class="subnavig" href="/web/?q=node/470" title="OVĚŘOVACÍ DOLOŽKA"><img id="menu44b" onmouseover="prejezd(2,'menu44b',1)" onmouseout="prejezd(2,'menu44b',0)" border="0" src="/web/themes/czechpoint/layout/menu/pasive/menu44b.jpg" alt="OVĚŘOVACÍ DOLOŽKA"></a></p>
+<p class="subnavig"><a class="subnavig" href="/web/?q=node/471" title="ÚLOŽIŠTĚ OVĚŘOVACÍCH DOLOŽEK"><img id="menu45b" onmouseover="prejezd(2,'menu45b',1)" onmouseout="prejezd(2,'menu45b',0)" border="0" src="/web/themes/czechpoint/layout/menu/pasive/menu45b.jpg" alt="ÚLOŽIŠTĚ OVĚŘOVACÍCH DOLOŽEK"></a></p>
+<p class="subnavig"><a class="subnavig" href="/web/?q=node/472" title="ÚSCHOVNA DOKUMENTŮ"><img id="menu46b" onmouseover="prejezd(2,'menu46b',1)" onmouseout="prejezd(2,'menu46b',0)" border="0" src="/web/themes/czechpoint/layout/menu/pasive/menu46b.jpg" alt="ÚSCHOVNA DOKUMENTŮ"></a></p>
+<p class="subnavig"><a class="subnavig" href="/web/?q=node/507" title="ROZSÁHLÁ KONVERZE"><img id="menu47" onmouseover="prejezd(2,'menu47',1)" onmouseout="prejezd(2,'menu47',0)" border="0" src="/web/themes/czechpoint/layout/menu/pasive/menu47.jpg" alt="ROZSÁHLÁ KONVERZE"></a></p>
+<p class="subnavig"><img border="0" src="/web/themes/czechpoint/layout/2x2.gif" width="8" height="8" alt=""></p>
+</div>
+
+<div id="menu5" class="radka"
+style="display: none; position: absolute; z-index: 1; left: 528; top: 107; width: 130px; height: 120px; background-image: url('/web/themes/czechpoint/layout/menu/menu5_bgr2.jpg'); background-repeat: no-repeat; background-position: left top;">
+<p class="subnavig"><img border="0" src="/web/themes/czechpoint/layout/2x2.gif" width="8" height="8" alt=""></p>
+<p class="subnavig"><a class="subnavig" href="/web/?q=node/62" title="SEZNAM CZECH POINTŮ"><img id="menu51" onmouseover="prejezd(2,'menu51',1)" onmouseout="prejezd(2,'menu51',0)" border="0" src="/web/themes/czechpoint/layout/menu/pasive/menu51.jpg" alt="SEZNAM CZECH POINTŮ"></a></p>
+<p class="subnavig"><a class="subnavig" href="/web/?q=node/20" title="PRO NOVINÁŘE"><img id="menu52" onmouseover="prejezd(2,'menu52',1)" onmouseout="prejezd(2,'menu52',0)" border="0" src="/web/themes/czechpoint/layout/menu/pasive/menu52.jpg" alt="PRO NOVINÁŘE"></a></p>
+<p class="subnavig"><a class="subnavig" href="/web/?q=node/21" title="PRO KONTAKTNÍ MÍSTA"><img id="menu54" onmouseover="prejezd(2,'menu54',1)" onmouseout="prejezd(2,'menu54',0)" border="0" src="/web/themes/czechpoint/layout/menu/pasive/menu54.jpg" alt="PRO KONTAKTNÍ MÍSTA"></a></p>
+<p class="subnavig"><a class="subnavig" href="/web/?q=node/632" title="CzechPOINT@home"><img id="menu55" onmouseover="prejezd(2,'menu55',1)" onmouseout="prejezd(2,'menu55',0)" border="0" src="/web/themes/czechpoint/layout/menu/pasive/menu55.jpg" alt="CzechPOINT@home"></a></p>
+<p class="subnavig"><a class="subnavig" href="/web/?q=node/19" title="ODKAZY"><img id="menu53" onmouseover="prejezd(2,'menu53',1)" onmouseout="prejezd(2,'menu53',0)" border="0" src="/web/themes/czechpoint/layout/menu/pasive/menu53.jpg" alt="ODKAZY"></a></p>
+<p class="subnavig"><img border="0" src="/web/themes/czechpoint/layout/2x2.gif" width="8" height="8" alt=""></p>
+</div>
+<div id="menu6" class="radka"
+style="display: none; position: absolute; z-index: 1; left: 657; top: 107; width: 125px; height: 64px; background-image: url('/web/themes/czechpoint/layout/menu/menu6_bgr.jpg'); background-repeat: no-repeat; background-position: left top;">
+<p class="subnavig"><img border="0" src="/web/themes/czechpoint/layout/2x2.gif" width="8" height="8" alt=""></p>
+<p class="subnavig"><a class="subnavig" href="/web/?q=node/488" title="Czech POINT"        ><img id="menu61c" onmouseover="prejezd(2,'menu61c',1)" onmouseout="prejezd(2,'menu61c',0)" border="0" src="/web/themes/czechpoint/layout/menu/pasive/menu61c.jpg" alt="Czech POINT"        ></a></p>
+<p class="subnavig"><a class="subnavig" href="/web/?q=node/489" title="Czech POINT@office" ><img id="menu62c" onmouseover="prejezd(2,'menu62c',1)" onmouseout="prejezd(2,'menu62c',0)" border="0" src="/web/themes/czechpoint/layout/menu/pasive/menu62c.jpg" alt="Czech POINT@office" ></a></p>
+<p class="subnavig"><img border="0" src="/web/themes/czechpoint/layout/2x2.gif" width="8" height="8" alt=""></p>
+</div>
+        </td>
+      </tr>
+      <tr>
+        <td width="784" onclick="changemenu('')" onmouseover="changemenu('')">
+<table border="0" cellpadding="0" cellspacing="0" width="784">
+  <tr>
+    <td valign="top" width="100%" align="left" rowspan="2"><a href="/web/" title="Domovská stránka"><img border="0" src="/web/themes/czechpoint/layout/logo.jpg" width="175" height="105" alt="Domovská stránka"></a></td>
+    <td valign="top" align="right" nowrap><p class='eshop'><a href="?q=node/628">Aktuální dostupnost služeb</a></p></td>
+    <td><img border="0" src="/web/themes/czechpoint/layout/2x2.gif" width="7" height="30" alt=""></td>
+<!--
+//-->
+    <td valign="top" align="right" nowrap><p class='stav'><span class='stav_cislo'><!-- @DATE@ -->9.12.2014<!-- @/DATE@ --></span></p></td>
+    <td><img border="0" src="/web/themes/czechpoint/layout/2x2.gif" width="17" height="30" alt=""></td>
+    <td valign="top" align="right" nowrap></td>
+    <td valign="top" align="right" nowrap>
+      <!-- <p class='eshop'><a target="_blank" href="http://eshop.czechpoint.cz/" title="e-Shop - výpisy poštou">E-SHOP</a></p> //-->
+      <p class='eshop'><a href="eshop/" title="e-Shop - výpisy poštou">E-SHOP</a></p>
+    </td>
+    <td valign="top" align="right" nowrap><a href="https://www.czechpoint.cz/as/login?uri=https%3a%2f%2fwww.czechpoint.cz%2fvibe%2f&status=NCOO " target="_blank"><img border="0" src="/web/themes/czechpoint/layout/infoPORT.png"
+    alt="infoPORT" width="118" height="34" style="margin-top: 18px; margin-right: 2px;"></a></td>
+<!--
+    <td valign="top" align="right" nowrap><map name="eGonMap"><area href="/web/?q=node/18"
+    shape="rect" coords="7, 10, 160, 60" title="eGovernment" alt="eGovernment"></map><img border="0" src="/web/themes/czechpoint/layout/egon.gif"
+    alt="" width="168" height="65" usemap="#eGonMap"></td>
+//-->
+  </tr>
+  <tr>
+    <td valign="middle" align="right" nowrap colspan="7"><div style="margin-top: 0px; margin-bottom: 8px">
+
+
+ <form action="/web/?q=search/node" accept-charset="UTF-8" method="post" id="search-block-form">
+
+ <input type="submit" name="op" id="edit-submit" onmouseover="prejezd_tlacitka('edit-submit',1)" onmouseout="prejezd_tlacitka('edit-submit',0)" value="hledat" class="findknofl"><img border="0" src="/web/themes/czechpoint/layout/2x2.gif" width="8" height="4" alt=""><input type="text" name="search_block_form_keys"  value="" title="Zadejte hledaný termín." class="findpole" style="height: 19">
+
+
+<input type="hidden" name="form_id" id="edit-search-block-form" value="search_block_form">
+
+</form>
+
+
+</div>
+<script language="JavaScript" type="text/javascript"><!--
+domOK = Boolean(document.getElementById);
+// domOK = false;
+function prejezd_tlacitka(id,nad) {
+	if (domOK) {
+		if (nad == 1) {
+			document.getElementById(id).style.background  ="#A8A9AC" ;
+			document.getElementById(id).style.color       ="#FFFFFF" ;
+			document.getElementById(id).style.borderLeft  ="#DBDCDE 2px solid" ;
+			document.getElementById(id).style.borderTop   ="#F8F8F8 2px solid" ;
+			document.getElementById(id).style.borderRight ="#BBBCBF 2px solid" ;
+			document.getElementById(id).style.borderBottom="#CDCED0 2px solid" ;
+		} else {
+			document.getElementById(id).style.background  ="#D1D2D4" ;
+			document.getElementById(id).style.color       ="#000000" ;
+			document.getElementById(id).style.borderLeft  ="#EDEEEF 2px solid" ;
+			document.getElementById(id).style.borderTop   ="#F8F8F8 2px solid" ;
+			document.getElementById(id).style.borderRight ="#DBDCDE 2px solid" ;
+			document.getElementById(id).style.borderBottom="#E5E6E7 2px solid" ;
+		} ;
+	} ;
+}
+prejezd_tlacitka("edit-submit",0) ;
+--></script>
+</td>
+  </tr>
+</table>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+  <tr>
+    <td width="784" align="left" valign="top" onclick="changemenu('')" onmouseover="changemenu('')">
+    <table border="0" cellpadding="0" cellspacing="0" width="784">
+      <tr>
+        <td align="left" valign="top" width="564" style="border: 0px solid #FFFFFF;">
+<div class="skryte">
+<ul>
+  <li><a href="#hlavni">Hlavní obsah stránky</a></li>
+  <li><a href="#menu">Navigace</a></li>
+</ul>
+</div>
+<div class="skryte">
+<h2><a name="hlavni">Hlavní obsah stránky</a></h2>
+</div>
+
+
+
+<div class="panel-display panel-2col-bricks clear-block"  id='frontpage'>
+  <div class="panel-panel panel-col-top">
+    <div class="inside"></div>
+  </div>
+  <div class="center-wrapper">
+    <div class="panel-panel panel-col-first">
+      <div class="inside"><div class="panel-pane">
+<div class="content">  <p class="radka" id="home_banner"><script language="JavaScript" type="text/javascript">
+document.write( "<" + "object classid='clsid:D27CDB6E-AE6D-11CF-96B8-444553540000' id='intro' " ) ;
+document.write( "codebase='http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0' border='0' width='285' height='300'>" ) ;
+document.write( "  <param name='movie' value='/web/images/CP_Katastr_285x300.swf'>" ) ;
+document.write( "  <param name='quality' value='High'>" ) ;
+document.write( "  <embed src='/web/images/CP_Katastr_285x300.swf' pluginspage='http://www.macromedia.com/go/getflashplayer' " ) ;
+document.write( "  type='application/x-shockwave-flash' name='intro' width='285' height='300'>" ) ;
+document.write( "</" + "object>" ) ;
+</script>
+</p></div>
+</div>
+<div class="panel-separator"></div><div class="panel-pane najdetesvujcz">
+<div class="content"><p class="radka"><img src="themes/czechpoint/layout/najdete.gif" border="0" alt="Najděte svůj CzechPOINT" vspace="8" width="284" height="17"></p>
+  <p class="radka"><img src="themes/czechpoint/layout/2x2.gif" border="0" alt="" width="20" height="20"></p>
+  <div class="radka">
+  <script language="JavaScript" type="text/javascript"><!--
+// resize() ;
+// --></script>
+
+<script language="javascript" type="text/javascript"> AC_FL_RunContent = 0; </script>
+<script language="javascript" type="text/javascript"> DetectFlashVer = 0; </script>
+<script src="/web/inc/AC_RunActiveContent.js" language="javascript" type="text/javascript"></script>
+<script language="JavaScript" type="text/javascript">
+<!--
+// -----------------------------------------------------------------------------
+// Globals
+// Major version of Flash required
+var requiredMajorVersion = 6;
+// Minor version of Flash required
+var requiredMinorVersion = 6;
+// Revision of Flash required
+var requiredRevision = 65;
+// -----------------------------------------------------------------------------
+// -->
+</script>
+<script language="JavaScript" type="text/javascript">
+<!--
+if (AC_FL_RunContent == 0 || DetectFlashVer == 0) {
+	alert("This page requires AC_RunActiveContent.js.");
+} else {
+	var hasRightVersion = DetectFlashVer(requiredMajorVersion, requiredMinorVersion, requiredRevision);
+	if(hasRightVersion) {  // if we've detected an acceptable version
+		// embed the flash movie
+		AC_FL_RunContent(
+			'codebase', 'http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,6,65,0',
+			'width', '285',
+			'height', '171',
+			'src', '/web/images/mapaA80610',
+			'quality', 'high',
+			'pluginspage', 'http://www.macromedia.com/go/getflashplayer',
+			'align', 'middle',
+			'play', 'true',
+			'loop', 'true',
+			'scale', 'showall',
+			'wmode', 'window',
+			'devicefont', 'false',
+			'id', 'mapa',
+			'bgcolor', '#666666',
+			'name', 'mapaA80610',
+			'menu', 'true',
+			'allowScriptAccess','sameDomain',
+			'allowFullScreen','false',
+			'movie', '/web/images/mapaA80610',
+			'salign', ''
+			); //end AC code
+	} else {  // flash is too old or we can't detect the plugin
+		document.write("<" + "p class='radka'><img border='0' src='/web/images/mapa.gif' width='285' height='171' alt=''></" + "p>");  // insert non-flash content
+	}
+}
+// -->
+</script>
+  </div>
+  <p class="radka"><img src="themes/czechpoint/layout/2x2.gif" border="0" alt="" width="20" height="20"></p>
+  </div>
+</div>
+</div>
+    </div>
+
+    <div class="panel-panel panel-col-last">
+      <div class="inside"><div class="panel-pane">
+<h2 class="title">CzechPOINT@home</h2>
+<div class="content"><p>Občané, kteří dávají přednost elektronické komunikaci, mají konečně možnost získat výpis z Obchodního rejstříku, Živnostenského rejstříku a dalších rejstříků ISVS v elektronické podobě. Již nebude nutné chodit pro požadovaný výpis na kontaktní místo Czech POINT. Postačí mít aktivní datovou schránku a výpis Vám do ní bude doručen.</p>
+<p>Přístup ke službě <a href="https://portal.gov.cz/portal/obcan/cph/cat-2.html" target="_blank" title="portal.gov.cz">zde</a>.</p>
+<p>Nabídka výpisů bude postupně doplňována v závislosti na změnách v legislativě ČR.<br />
+<!--<br><br>Přístup ke službě CzechPOINT@home se nachází na <a target="_blank" href="http://portal.gov.cz">Portálu veřejné správy</a>.<br>//--><a href="?q=node/609">Více informací</a>.<br><br>Pokud nemáte datovou schránku dosud zřízenu, můžete o ni požádat pomocí <a href="http://www.datoveschranky.info/obcan/#zrizeni_datove_schranky" target="_blank">následujícího postupu</a>.</p>
+</div>
+</div>
+<div class="panel-separator"></div><div class="panel-pane uradynadlani">
+<h2 class="title">Czech POINT a základní registry</h2>
+<div class="content">Czech POINT pokračuje v přibližování výkonu státní správy občanům. Potvrzuje, že je nejpohodlnějším způsobem, jak z jediného místa komunikovat s úřady a institucemi. Kromě standardní škály služeb, rozšiřuje od 1.7.2012 svoji nabídku o výpisy ze základních registrů podle zákona č.111/2009 Sb., o základních registrech.<br><br>
+Občané tak mají možnost ověřit si údaje, které jsou o nich v registrech vedeny, úředníci pak mají prostřednictvím formulářů v části CzechPOINT@office přístup k referenčním údajům ze základních registrů.<br><br>
+Více se dočtete v článku <a href="index.php?q=node/586">zde</a>.</div>
+</div>
+</div>
+    </div>
+  </div>
+  <div class="panel-panel panel-col-middle">
+    <div class="inside"></div>
+  </div>
+  <div class="center-wrapper">
+    <div class="panel-panel panel-col-first">
+      <div class="inside"></div>
+    </div>
+
+    <div class="panel-panel panel-col-last">
+      <div class="inside"></div>
+    </div>
+  </div>
+  <div class="panel-panel panel-col-bottom">
+    <div class="inside"><div class="panel-pane uradynadlani">
+<h2 class="title">Pro každého, pro všechny</h2>
+<div class="content">Czech POINTy jsou v současné době rozšířeny na více než 7000 obecních a krajských úřadech,  vybraných pracovištích České pošty, zastupitelských úřadech, kancelářích Hospodářské komory a také v kancelářích notářů. Pro vyhledání Czech POINTů v konkrétní lokalitě můžete použít interaktivní mapku.<br>&nbsp;
+<table border="0" width="563" cellspacing="0" cellpadding="0">
+  <tr>
+    <td align="left" valign="top"><a href="http://www.strukturalni-fondy.cz/iop" target="_blank"><img border="0" src="docs/iop2.gif" width="480" height="65" alt="Integrovaný operační program"></a></td>
+    <td align="right" valign="top"><a href="http://www.webarchiv.cz" target="_blank"><img border="0" src="docs/webarchiv.gif" width="73" height="65" alt="WebArchiv"></a></td>
+  </tr>
+</table>
+Czech POINT reg.č. CZ.1.06/1.1.00/03.05921<br>
+Tento projekt je spolufinancován z prostředků Evropské Unie Evropského fondu pro regionální rozvoj prostřednictvím Integrovaného operačního programu.
+<br>&nbsp;</div>
+</div>
+</div>
+  </div>
+</div>
+
+        </td>
+        <td width="15" colspan="2"><p class="radka"><img border="0" src="/web/themes/czechpoint/layout/2x2.gif" width="15" height="15" alt=""></p></td>
+        <td width="205" align="left" valign="top" colspan="2">
+        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="line-height: 75%;">
+          <tr>
+            <td width="100%"><p class="radka"><img border="0" src="/web/themes/czechpoint/layout/novinky/title.jpg" width="205" height="54" alt="Novinky"></p></td>
+          </tr>
+          <tr>
+            <td width="100%"><p class="radka"><img border="0" src="/web/themes/czechpoint/layout/novinky/top.gif" width="205" height="15" alt=""></p></td>
+          </tr>
+          <tr>
+            <td width="100%" style="background-image: url('/web/themes/czechpoint/layout/novinky/bgr.gif')" align="left" valign="top">
+              <div id="block-views-novinky" class="clear-block block block-views">
+
+
+  <div class="content"><div class='view view-novinky'><div class='view-content view-content-novinky'><div class="item-list"><ul><li><div class='view-item view-item-novinky'><div class='view-field view-data-node-created'>25.11.2014</div><div class='view-field view-data-node-title'><a href="/web/?q=node/637">12 milionů výpisů</a></div></div>
+</li><li><div class='view-item view-item-novinky'><div class='view-field view-data-node-created'>12.11.2014</div><div class='view-field view-data-node-title'><a href="/web/?q=node/636">Vypnutí SSLv3</a></div></div>
+</li><li><div class='view-item view-item-novinky'><div class='view-field view-data-node-created'>7.10.2014</div><div class='view-field view-data-node-title'><a href="/web/?q=node/635">&quot;Elektronické volby&quot;</a></div></div>
+</li><li><div class='view-item view-item-novinky'><div class='view-field view-data-node-created'>8.9.2014</div><div class='view-field view-data-node-title'><a href="/web/?q=node/634">Volby do obecních zastupitelstev</a></div></div>
+</li><li><div class='view-item view-item-novinky'><div class='view-field view-data-node-created'>11.8.2014</div><div class='view-field view-data-node-title'><a href="/web/?q=node/633">Aktuální dostupnost služeb</a></div></div>
+</li><li><div class='view-item view-item-novinky'><div class='view-field view-data-node-created'>1.7.2014</div><div class='view-field view-data-node-title'><a href="/web/?q=node/631">5 let podpory ISDS</a></div></div>
+</li><li><div class='view-item view-item-novinky'><div class='view-field view-data-node-created'>10.6.2014</div><div class='view-field view-data-node-title'><a href="/web/?q=node/627">Ukončení podpory Microsoft Windows XP ve vztahu ke službám Czech POINT</a></div></div>
+</li><li><div class='view-item view-item-novinky'><div class='view-field view-data-node-created'>30.5.2014</div><div class='view-field view-data-node-title'><a href="/web/?q=node/626">11 milionů výpisů</a></div></div>
+</li><li><div class='view-item view-item-novinky'><div class='view-field view-data-node-created'>21.5.2014</div><div class='view-field view-data-node-title'><a href="/web/?q=node/625">Seminář o sdílených službách</a></div></div>
+</li><li><div class='view-item view-item-novinky'><div class='view-field view-data-node-created'>2.4.2014</div><div class='view-field view-data-node-title'><a href="/web/?q=node/624">Czech POINTu je 7 let</a></div></div>
+</li></ul></div></div></div>
+</div>
+</div>
+<div id="block-block-1" class="clear-block block block-block">
+
+
+  <div class="content"><p><a href="?q=novinky">Archiv novinek</a></p>
+</div>
+</div>
+<div id="block-block-2" class="clear-block block block-block">
+
+
+  <div class="content"><a href="?q=novinky2">Archiv zpráv</a></div>
+</div>
+            </td>
+          </tr>
+          <tr>
+            <td width="100%"><img border="0" src="/web/themes/czechpoint/layout/novinky/bottom.gif" width="205" height="15" alt=""></td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+      <tr>
+        <td align="left" valign="bottom" style="border: 0px solid #FFFFFF; line-height: 75%;">
+          <p class="copyright">&copy; 2014 Ministerstvo vnitra České republiky, všechna práva vyhrazena</p>
+        </td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+    </td>
+    <td width="50%" onclick="changemenu('')" onmouseover="changemenu('')"></td>
+  </tr>
+</table>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-5801266-1");
+pageTracker._trackPageview();
+</script></div>
+
+</body>
+
+</html>
+
+

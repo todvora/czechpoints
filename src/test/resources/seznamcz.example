@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<result>
+    <point query="Hybernská 2086/15, Praha 1 - Nové Město" status="200" message="OK" >
+	<item
+		x="14.4351758186"
+		y="50.0875225506"
+		id="9087378"
+		source="addr"
+                title="Hybernská 2086/15, Praha, okres Hlavní město Praha, Česká republika"
+	/>
+
+
+    </point>
+</result>
