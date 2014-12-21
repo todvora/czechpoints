@@ -137,6 +137,12 @@ var constructPopupContent = function (item) {
     return content.html();
 };
 
+var popupEventFunction = function(marker) {
+    marker.unbindPopup();
+    marker.bindPopup(constructPopupContent(marker.rawData));
+    $(location).attr('hash', marker.rawData.id);
+    marker.openPopup();
+}
 
 $.get("czechpoints.json", function (data) {
     var knownTypes = {};
@@ -147,10 +153,8 @@ $.get("czechpoints.json", function (data) {
         if (item.location !== null) {
             var marker = L.marker([item.location.lat, item.location.lon]);
             marker.rawData = item;
-            marker.on('click', function (e) {
-                this.unbindPopup();
-                marker.bindPopup(constructPopupContent(item));
-                this.openPopup();
+            marker.on('click', function(e) {
+                popupEventFunction(this);
             });
             allMarkers.push(marker);
         } else {
@@ -161,4 +165,16 @@ $.get("czechpoints.json", function (data) {
     cluster.addLayers(allMarkers);
     map.addLayer(cluster);
     renderLegend(allMarkers, cluster, knownTypes);
+
+    var hash = $(location).attr('hash');
+    if(typeof hash != "undefined" && hash.length > 1) {
+        hash = hash.substr(1);
+        var filtered = allMarkers.filter(function(item){return item.rawData.id == hash});
+        console.log(filtered);
+        filtered.forEach(function(item){
+            cluster.zoomToShowLayer(item, function() {
+                popupEventFunction(item);
+            })
+        });
+    }
 });

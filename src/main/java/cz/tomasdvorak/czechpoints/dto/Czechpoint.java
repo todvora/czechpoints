@@ -18,6 +18,7 @@ public class Czechpoint implements Serializable {
     private String type;
     private String email;
     private Map<String, String> openingTimes;
+    private String id;
 
     public Czechpoint() {
     }
@@ -135,5 +136,13 @@ public class Czechpoint implements Serializable {
 
     public void setOpeningTimes(final Map<String, String> openingTimes) {
         this.openingTimes = openingTimes;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(final String id) {
+        this.id = id;
     }
 }

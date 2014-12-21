@@ -12,9 +12,11 @@ import cz.tomasdvorak.czechpoints.parser.PageParser;
 import cz.tomasdvorak.czechpoints.persistence.JsonPersistenceService;
 import cz.tomasdvorak.czechpoints.persistence.PersistenceService;
 import cz.tomasdvorak.czechpoints.providers.CzechpointPages;
+import cz.tomasdvorak.czechpoints.utils.IdentificatorUtils;
 
 import java.io.IOException;
 import java.nio.file.Paths;
+import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
@@ -44,12 +46,22 @@ public class Workflow {
                 getOverviewPages()                     // generate stream of all known czechpoint listing pages
                     .map(this::parsePages)         // readCzechpoints czechpoints from pages
                     .flatMap(Collection::stream)   // concat all lists of czechpoints to one stream
-//                        .limit(100)                    // limit number of processed czechpoints
+                    .map(this::addId)     // add computed ID (MD5 of name and address)
                     .map(this::addPostData)     // add czech post details, if applicable
                     .map(this::addLocation)        // add location
                     .forEach(this::persist);   // persist
 
 
+    }
+
+    private Czechpoint addId(final Czechpoint czechpoint) {
+        try {
+            String computedID = IdentificatorUtils.getId(czechpoint);
+            czechpoint.setId(computedID);
+        } catch (NoSuchAlgorithmException e) {
+            throw new RuntimeException(e);
+        }
+        return czechpoint;
     }
 
 
