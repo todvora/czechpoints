@@ -6,8 +6,6 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import java.io.UnsupportedEncodingException;
-
 public class SeznamCzLocationServiceTest {
 
     private LocationService service;
@@ -16,7 +14,7 @@ public class SeznamCzLocationServiceTest {
     public void setUp() throws Exception {
         service = new SeznamCzLocationService() {
             @Override
-            protected String constructSearchUrl(final String street, final String city, final String zip) throws UnsupportedEncodingException {
+            protected String constructSearchUrl(final Czechpoint czechpoint) {
                 return this.getClass().getResource("/seznamcz.example").toString();
             }
         };

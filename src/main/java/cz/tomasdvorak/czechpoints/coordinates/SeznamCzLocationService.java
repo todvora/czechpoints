@@ -44,10 +44,11 @@ public class SeznamCzLocationService implements LocationService {
     }
 
     protected String getSeznamResponse(final Czechpoint czechpoint) throws Exception {
-        return URLConnectionReader.getText(constructSearchUrl(czechpoint.getStreet(), czechpoint.getCity(), czechpoint.getZip()));
+        return URLConnectionReader.getText(constructSearchUrl(czechpoint));
     }
 
-    protected String constructSearchUrl(final String street, final String city, final String zip) throws UnsupportedEncodingException {
-        return "http://api4.mapy.cz/geocode?query=" + URLEncoder.encode(street + ", " + city, "UTF-8");
+    protected String constructSearchUrl(final Czechpoint czechpoint) throws UnsupportedEncodingException {
+        return "http://api4.mapy.cz/geocode?query="
+            + URLEncoder.encode(czechpoint.getNormalizedStreet() + ", " + czechpoint.getZip() + " " + czechpoint.getCity(), "UTF-8");
     }
 }

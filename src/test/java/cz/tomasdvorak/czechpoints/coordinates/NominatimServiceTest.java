@@ -14,7 +14,7 @@ public class NominatimServiceTest {
     public void setUp() throws Exception {
         this.service = new NominatimService() {
             @Override
-            protected String getNominatimResponse(final String street, final String city, final String zip) throws Exception {
+            protected String getNominatimResponse(final Czechpoint czechpoint) throws Exception {
                 return TestUtils.getText("/nominatim.example");
             }
         };

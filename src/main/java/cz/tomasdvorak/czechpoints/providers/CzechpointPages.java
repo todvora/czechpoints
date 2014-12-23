@@ -12,6 +12,7 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 public class CzechpointPages implements PagesProvider {
 
@@ -20,19 +21,19 @@ public class CzechpointPages implements PagesProvider {
 
     @Override
     public List<DataPage> getKnownPages() throws Exception {
-        List<DataPage> result = new ArrayList<>();
+        final List<DataPage> result = new ArrayList<>();
         final Map<Integer, String> types = getTypes();
         final String html = getHomepageContent();
-        Document doc = Jsoup.parse(html);
+        final Document doc = Jsoup.parse(html);
         final Elements elements = doc.select("#menu1 p.subnavig a");
-        for(Element e : elements) {
+        for(final Element e : elements) {
 
             final String region = e.attr("title");
             final String url = e.attr("href");
             if(url.contains("node/55")) {
-                for(Map.Entry<Integer, String> type : types.entrySet()) {
-                    result.add(new DataPage(region,type.getValue(), HOMEPAGE + url.replace("node/55", "node/" + type.getKey())));
-                }
+                result.addAll(types.entrySet().stream()
+                    .map(type -> new DataPage(region, type.getValue(), HOMEPAGE + url.replace("node/55", "node/" + type.getKey())))
+                    .collect(Collectors.toList()));
             } else {
                 result.add(new DataPage(region, "Zastupitelský úřad ČR", HOMEPAGE + url));
             }

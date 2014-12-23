@@ -23,10 +23,10 @@ public class CzechpointPageParser implements PageParser {
         return parse(html, page);
     }
 
-    private List<Czechpoint> parse(final String html, final DataPage page) throws Exception {
+    private List<Czechpoint> parse(final String html, final DataPage page) {
 
-        List<Czechpoint> result = new ArrayList<>();
-        Document doc = Jsoup.parse(html);
+        final List<Czechpoint> result = new ArrayList<>();
+        final Document doc = Jsoup.parse(html);
 //        final String region = doc.select(".content h2").text();
         final Elements rows = doc.select("table.prehled tr");
         if (rows.size() < 2) {
@@ -36,9 +36,9 @@ public class CzechpointPageParser implements PageParser {
         final Map<Integer, Header> headers = getHeaderPositions(rows);
 
         for (int j = 1; j < rows.size(); j++) {
-            Element e = rows.get(j);
+            final Element e = rows.get(j);
             final Elements cols = e.select("td");
-            Map<Header, String> entry = new HashMap<>();
+            final Map<Header, String> entry = new HashMap<>();
             for(int i = 0; i < cols.size(); i++) {
                 final Element col = cols.get(i);
                 if(col.select("a").size() > 0) {
@@ -70,8 +70,8 @@ public class CzechpointPageParser implements PageParser {
                 street,
                 city,
                 zip,
-                entry.get(Header.WWW),
-                null);
+                entry.get(Header.WWW)
+        );
         czechpoint.setRegion(page.getRegion());
         czechpoint.setType(page.getType());
         return czechpoint;

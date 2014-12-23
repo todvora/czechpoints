@@ -4,7 +4,7 @@ import cz.tomasdvorak.czechpoints.workflow.Workflow;
 
 public class UpdateCzechpoints {
 
-    public static void main(String[] args) throws Exception {
+    public static void main(final String[] args) throws Exception {
 
         if (!Boolean.getBoolean("updateData")) {
             System.out.println("Skipping data update, 'updateData' parameter not present");

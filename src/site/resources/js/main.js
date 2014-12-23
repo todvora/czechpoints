@@ -50,7 +50,7 @@ var renderLegend = function (markers, cluster, knownTypes) {
         });
 
         $(typeLine).append(checkbox);
-        $(typeLine).append("&nbsp;" + type);
+        $(typeLine).append("&nbsp;" + "<i class='fa fa-"+getIconName(type)+"'></i>" + "&nbsp;" + type);
         $(div).append(typeLine);
 
 //        this._div.innerHTML = this._div.innerHTML + "<input type='checkbox' checked='checked'/>" + key + "<br>"
@@ -137,6 +137,19 @@ var constructPopupContent = function (item) {
     return content.html();
 };
 
+var getIconName = function(type) {
+ var mapping = {
+  'Banka':'university',
+  'Úřad':'home',
+  'Notář':'gavel',
+  'Česká pošta':'paper-plane',
+  'Zastupitelský úřad ČR':'life-ring',
+  'Hospodářská komora':'shield',
+  }
+  return mapping[type];  
+}
+  
+
 var popupEventFunction = function(marker) {
     marker.unbindPopup();
     marker.bindPopup(constructPopupContent(marker.rawData));
@@ -144,14 +157,26 @@ var popupEventFunction = function(marker) {
     marker.openPopup();
 }
 
-$.get("czechpoints.json", function (data) {
+var getIcon = function(item) {
+  var markerIcon = L.AwesomeMarkers.icon({
+    icon: getIconName(item.type),
+    markerColor: 'darkblue',
+    prefix: 'fa'
+  });
+
+  return markerIcon;
+}
+
+
+$.get("czechpoints.json", function(data) {
     var knownTypes = {};
     var cluster = new L.MarkerClusterGroup({maxClusterRadius:50});
     var allMarkers = [];
     data.forEach(function (item) {
         knownTypes[item.type] = true;
         if (item.location !== null) {
-            var marker = L.marker([item.location.lat, item.location.lon]);
+
+            var marker = L.marker([item.location.lat, item.location.lon], {icon: getIcon(item)});
             marker.rawData = item;
             marker.on('click', function(e) {
                 popupEventFunction(this);

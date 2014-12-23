@@ -5,12 +5,12 @@ import java.io.*;
 
 public class URLConnectionReader {
 
-    public static String getText(String url) throws Exception {
+    public static String getText(final String url) throws Exception {
         System.out.println("Downloading page: " + url);
-        URL website = new URL(url);
-        URLConnection connection = website.openConnection();
-        BufferedReader in = new BufferedReader(new InputStreamReader(connection.getInputStream()));
-        StringBuilder response = new StringBuilder();
+        final URL website = new URL(url);
+        final URLConnection connection = website.openConnection();
+        final BufferedReader in = new BufferedReader(new InputStreamReader(connection.getInputStream()));
+        final StringBuilder response = new StringBuilder();
         String inputLine;
         while ((inputLine = in.readLine()) != null) {
             response.append(inputLine);

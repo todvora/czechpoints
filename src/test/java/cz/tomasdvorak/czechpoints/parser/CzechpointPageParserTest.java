@@ -3,19 +3,12 @@ package cz.tomasdvorak.czechpoints.parser;
 import cz.tomasdvorak.czechpoints.dto.Czechpoint;
 import cz.tomasdvorak.czechpoints.dto.DataPage;
 import org.junit.Assert;
-import org.junit.Before;
 import org.junit.Test;
 
 import java.util.List;
 import java.util.Optional;
 
 public class CzechpointPageParserTest {
-
-    @Before
-    public void setUp() throws Exception {
-
-
-    }
 
     @Test
     public void parse() throws Exception {

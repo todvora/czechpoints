@@ -28,7 +28,7 @@ public class JsonPersistenceService implements PersistenceService {
     public synchronized List<Czechpoint> readAll() {
         try {
             return objectMapper.readValue(new FileInputStream(datastore.toFile()), new TypeReference<List<Czechpoint>>() {});
-        } catch (IOException e) {
+        } catch (final IOException e) {
             throw new RuntimeException(e);
         }
     }

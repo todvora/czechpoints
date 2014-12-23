@@ -13,7 +13,7 @@ public enum Header {
     WWW("WWW");
 
     private final Set<String> czechLabel;
-    private Header(String... czechLabel) {
+    private Header(final String... czechLabel) {
         this.czechLabel = new HashSet<>(Arrays.asList(czechLabel));
     }
 
@@ -22,7 +22,7 @@ public enum Header {
     }
 
     public static Header getByLabel(final String czechLabel) {
-        for(Header header : values()) {
+        for(final Header header : values()) {
             if(header.getCzechLabel().contains(czechLabel)) {
                 return header;
             }

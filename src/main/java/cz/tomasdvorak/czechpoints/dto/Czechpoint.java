@@ -1,5 +1,8 @@
 package cz.tomasdvorak.czechpoints.dto;
 
+import org.apache.commons.lang3.math.NumberUtils;
+import org.codehaus.jackson.annotate.JsonIgnore;
+
 import java.io.Serializable;
 import java.util.Map;
 
@@ -24,14 +27,13 @@ public class Czechpoint implements Serializable {
     }
 
     public Czechpoint(final String name, final String municipality, final String street, final String city, final String zip,
-            final String www, final Coordinates location) {
+                      final String www) {
         this.name = name;
         this.municipality = municipality;
         this.street = street;
         this.city = city;
         this.zip = zip;
         this.www = www;
-        this.location = location;
     }
 
     public String getName() {
@@ -43,6 +45,14 @@ public class Czechpoint implements Serializable {
     }
 
     public String getStreet() {
+        return street;
+    }
+
+    @JsonIgnore
+    public String getNormalizedStreet() {
+        if (NumberUtils.isNumber(street)) {
+            return city + " " + street;
+        }
         return street;
     }
 

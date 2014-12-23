@@ -69,7 +69,7 @@ public class Workflow {
         toPersist.add(czechpoint);
         try {
             persistenceService.writeAll(toPersist);
-        } catch (IOException e) {
+        } catch (final IOException e) {
             e.printStackTrace();
         }
     }
@@ -77,7 +77,7 @@ public class Workflow {
     private List<Czechpoint> parsePages(final DataPage dataPage) {
         try {
             return pageParser.readCzechpoints(dataPage);
-        } catch (Exception e) {
+        } catch (final Exception e) {
             throw new RuntimeException(e);
         }
     }
@@ -101,7 +101,7 @@ public class Workflow {
                     czechpoint.setEmail(apiData.getEmail());
                     czechpoint.setOpeningTimes(apiData.getOpeningTimes());
                 }
-            } catch (Exception e) {
+            } catch (final Exception e) {
 //                throw new RuntimeException(e);
                 e.printStackTrace();
             }
@@ -114,7 +114,7 @@ public class Workflow {
             if(czechpoint.getLocation() == null) {
                 czechpoint.setLocation(locationService.getCoordinates(czechpoint));
             }
-        } catch (Exception e) {
+        } catch (final Exception e) {
             e.printStackTrace();
 //            throw new RuntimeException(e);
         }

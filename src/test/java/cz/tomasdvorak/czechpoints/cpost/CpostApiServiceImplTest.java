@@ -2,7 +2,6 @@ package cz.tomasdvorak.czechpoints.cpost;
 
 import cz.tomasdvorak.czechpoints.dto.PostApiData;
 import org.junit.Assert;
-import org.junit.Before;
 import org.junit.Test;
 
 import java.io.UnsupportedEncodingException;
@@ -12,7 +11,7 @@ public class CpostApiServiceImplTest {
     private CpostApiServiceImpl getService(final String filename) {
         return new CpostApiServiceImpl() {
             @Override
-            protected String constructSearchUrl(final String zip) throws UnsupportedEncodingException {
+            protected String constructSearchUrl(final String zip) {
                 return this.getClass().getResource(filename).toString();
             }
         };
@@ -20,7 +19,7 @@ public class CpostApiServiceImplTest {
 
     @Test
     public void getByZipSimpleData() throws Exception {
-        CpostApiServiceImpl service = getService("/cpostapi.example");
+        final CpostApiServiceImpl service = getService("/cpostapi.example");
         final PostApiData result = service.getByZip("35002");
         Assert.assertEquals("Cheb 2", result.getName());
         Assert.assertEquals("Cheb", result.getCommune());
@@ -36,7 +35,7 @@ public class CpostApiServiceImplTest {
     }
     @Test
     public void getByZipMultipleTimes() throws Exception {
-        CpostApiServiceImpl service = getService("/cpostapi_times.example");
+        final CpostApiServiceImpl service = getService("/cpostapi_times.example");
         final PostApiData result = service.getByZip("28403");
         Assert.assertEquals("08:00-10:30, 13:00-15:30, 15:45-16:45", result.getOpeningTimes().get("monday"));
         Assert.assertEquals("08:00-10:30, 13:00-15:30, 15:45-16:45", result.getOpeningTimes().get("tuesday"));

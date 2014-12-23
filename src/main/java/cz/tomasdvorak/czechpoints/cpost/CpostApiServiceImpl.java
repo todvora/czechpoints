@@ -7,8 +7,6 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
-import java.io.UnsupportedEncodingException;
-import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.StringJoiner;
@@ -100,21 +98,21 @@ public class CpostApiServiceImpl implements CpostApiService {
 //        <day name="sunday"/>
 //        </openingHours>
 
-        Elements days = xml.select("openingHours day");
-        Map<String, String> result = new LinkedHashMap<>();
+        final Elements days = xml.select("openingHours day");
+        final Map<String, String> result = new LinkedHashMap<>();
         days.forEach(element -> {
-            String times = parseTimes(element);
+            final String times = parseTimes(element);
             result.put(element.attr("name"), times);
         });
         return result;
     }
 
     private String parseTimes(final Element element) {
-        StringJoiner joiner = new StringJoiner(", ");
+        final StringJoiner joiner = new StringJoiner(", ");
         for (int i = 1; i <= 3; i++) {
 
-            Elements from = element.select("since" + i);
-            Elements till = element.select("to" + i);
+            final Elements from = element.select("since" + i);
+            final Elements till = element.select("to" + i);
 
             if(!from.isEmpty() && !till.isEmpty()) {
                 joiner.add(from.text() + "-" + till.text());
@@ -122,7 +120,7 @@ public class CpostApiServiceImpl implements CpostApiService {
 
         }
 
-        String result = joiner.toString();
+        final String result = joiner.toString();
         if(result.isEmpty()) {
             return null;
         }
@@ -165,7 +163,7 @@ public class CpostApiServiceImpl implements CpostApiService {
         return URLConnectionReader.getText(constructSearchUrl(zip));
     }
 
-    protected String constructSearchUrl(final String zip) throws UnsupportedEncodingException {
+    protected String constructSearchUrl(final String zip) {
         return "https://b2c.cpost.cz/services/PostOfficeInformation/getDataAsXml?postCode=" + zip;
     }
 }
