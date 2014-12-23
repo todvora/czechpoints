@@ -195,7 +195,6 @@ $.get("czechpoints.json", function(data) {
     if(typeof hash != "undefined" && hash.length > 1) {
         hash = hash.substr(1);
         var filtered = allMarkers.filter(function(item){return item.rawData.id == hash});
-        console.log(filtered);
         filtered.forEach(function(item){
             cluster.zoomToShowLayer(item, function() {
                 popupEventFunction(item);
