@@ -26,6 +26,70 @@ var renderOpeningTimes = function (openingTimes) {
     return result;
 };
 
+var renderSearchBox = function (markers, cluster) {
+    var info = L.control({position: 'topleft'});
+    info.onAdd = function (map) {
+        this._div = L.DomUtil.create('div', 'info'); // create a div with a class "info"
+        this._div.innerHTML = '<input type="text" name="q" placeholder="hledat..." />';
+        return this._div;
+    };
+    info.addTo(map);
+
+    var suggestBox = $('input[name="q"]');
+
+    var onSuggestSelected = function() {
+        var searched = suggestBox.val();
+        suggestBox.val('');
+        $(".autocomplete-suggestion").each(function(element){
+            var id = $(this).attr('data-id');
+            if($(this).attr("data-val") == searched) {
+                var filtered = markers.filter(function(item){return item.rawData.id == id});
+                filtered.forEach(function(item){
+                    cluster.zoomToShowLayer(item, function() {
+                        popupEventFunction(item);
+                    })
+                });
+            }
+        });
+    }
+
+    suggestBox.autoComplete({
+        minChars: 2,
+        cache: false,
+        source: function(term, suggest){
+            term = term.toLowerCase();
+            var matches = [];
+            for (i=0; i<markers.length && matches.length < 10; i++)
+                if (~JSON.stringify(markers[i].rawData).toLowerCase().indexOf(term)) {
+                    matches.push(markers[i].rawData);
+                }
+            suggest(matches);
+        },
+        renderItem: function (item, search) {
+            var re = new RegExp("(" + search + ")", "gi");
+            var result = $(document.createElement('div'));
+            if(item.name != null) {
+                result.append('<strong>' + item.name + '</strong>');
+            } else {
+                result.append('<strong>' + item.type + '</strong>');
+            }
+            result.append(',&nbsp;' + item.location.displayName);
+            result = result.html().replace(re, "<span class='search-term'>$1</span>");
+            return '<div class="autocomplete-suggestion" data-val="' + item.location.displayName + '" data-id="'+item.id+'"">' + result + '</div>';
+        },
+        onSelect: function(term) {
+            onSuggestSelected();
+        }
+    });
+
+    suggestBox.keypress(function() {
+        if (event.which == 13) {
+            event.preventDefault();
+            onSuggestSelected();
+        }
+    });
+}
+
 var renderLegend = function (markers, cluster, knownTypes) {
 
     var addType = function (div, type) {
@@ -190,6 +254,7 @@ $.get("czechpoints.json", function(data) {
     cluster.addLayers(allMarkers);
     map.addLayer(cluster);
     renderLegend(allMarkers, cluster, knownTypes);
+    renderSearchBox(allMarkers, cluster);
 
     var hash = $(location).attr('hash');
     if(typeof hash != "undefined" && hash.length > 1) {
